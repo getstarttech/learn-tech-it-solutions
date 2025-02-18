@@ -1,0 +1,24 @@
+.heading-64 {
+    font-size: 50px ;
+    font-family: "Exo 2" ;
+}
+
+.home-30 {
+    font-size: 25px ;
+    font-family: "Exo 2" ;
+}
+
+.para-17 {
+    font-size: 17px !important;
+    font-family: "Exo 2" !important;
+}
+
+@media (max-width: 768px) {
+    .heading-64 {
+        font-size: 18px !important; 
+    }
+
+    .para-17 {
+        font-size: 14px !important;
+    }
+}
