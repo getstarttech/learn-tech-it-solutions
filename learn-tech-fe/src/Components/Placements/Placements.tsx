@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { FAQ } from "../FAQ/FAQ";
 import Testimonials from "../Testimonials/Testimonials";
+import { useLocation } from "react-router-dom";
 
 export const Placements = () => {
 
     const [placedStudents, setPlacedStudents] = useState(0);
     const [companies, setCompanies] = useState(0);
     const [currentStudents, setCurrentStudents] = useState(0);
+    const location = useLocation();
 
     useEffect(() => {
         const interval = setInterval(() => {
