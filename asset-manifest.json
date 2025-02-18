@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/getstarttech/learn-tech-it-solutions/static/css/main.c90c17c5.css",
+    "main.js": "/getstarttech/learn-tech-it-solutions/static/js/main.97673488.js",
+    "static/js/453.949bddd1.chunk.js": "/getstarttech/learn-tech-it-solutions/static/js/453.949bddd1.chunk.js",
+    "index.html": "/getstarttech/learn-tech-it-solutions/index.html",
+    "main.c90c17c5.css.map": "/getstarttech/learn-tech-it-solutions/static/css/main.c90c17c5.css.map",
+    "main.97673488.js.map": "/getstarttech/learn-tech-it-solutions/static/js/main.97673488.js.map",
+    "453.949bddd1.chunk.js.map": "/getstarttech/learn-tech-it-solutions/static/js/453.949bddd1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c90c17c5.css",
+    "static/js/main.97673488.js"
+  ]
+}

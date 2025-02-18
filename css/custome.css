@@ -1,0 +1,929 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.carousel-caption p {
+  font-size: 1rem;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+.header {
+  background: linear-gradient(135deg, #a4204d, #f9636b);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  font-size: 18px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 0px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 70px;
+  margin-left: -20px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-container h1 {
+  margin: 0;
+  color: white;
+  font-size: 20px;
+}
+
+.home-screen-container h1 {
+  margin: 0;
+  color: #a4204d;
+  font-size: 40px !important;
+}
+
+.text-container p {
+  margin: 5px 0 0 0;
+  color: #061b3f;
+  font-size: 12px;
+}
+
+.navbar {
+  background: transparent;
+}
+
+.navbar-nav .nav-link {
+  margin-left: 40px;
+  color: #ffffff !important;
+  font-weight: 500;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.nav-link:hover {
+  color: #243b64 !important;
+  transform: scale(1.1);
+}
+
+.navbar-toggler {
+  background-color: rgba(255, 255, 255, 0.3);
+  border: none;
+}
+
+.navbar-toggler-icon {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+  color: #243b64 !important;
+  text-decoration: none;
+}
+
+.container-fluid {
+  max-width: 1200px;
+  padding: 0;
+}
+
+.bg-custom {
+  background: linear-gradient(135deg, #a4204d, #f9636b);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.placement-card {
+  height: 130%;
+}
+
+.placement {
+  border: 1px solid rgba(159, 157, 157, 0.2);
+  border-radius: 10px;
+}
+
+.img-br {
+  border-radius: 15px;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #243b64;
+  margin-bottom: 10px;
+}
+
+.margin-bottom {
+  margin-bottom: -150px;
+}
+
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* ✅ Transparent gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-card {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border-top: 5px solid hsl(186, 70%, 10%);
+  border-bottom: 5px solid hsl(186, 70%, 10%);
+  animation: rotateLoader 1s linear infinite;
+  background: transparent;
+}
+
+@keyframes rotateLoader {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.btn-pointer {
+  cursor: pointer;
+}
+
+.header-style {
+  margin-left: 500px !important;
+}
+
+.faq-margin {
+  margin: 0 70px;
+}
+
+.height-500 {
+  height: 400px !important;
+}
+
+.margin-top-250 {
+  margin-top: 100px;
+}
+
+/* Footer */
+.footer-container {
+  background: linear-gradient(135deg, #a4204d, #f9636b);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: hidden;
+}
+
+.footer-container .card-title,
+.footer-container .card-text,
+.footer-container .footer-address {
+  color: #ffffff;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.footer-container .btn-img img {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s ease;
+}
+
+.footer-container .btn-img img:hover {
+  transform: scale(1.2);
+}
+
+.footer-container iframe {
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.footer-container p {
+  color: #ffffff;
+  margin-top: 20px;
+  font-size: 0.9rem;
+}
+
+.glass-effect {
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.glass-effect:hover {
+  transform: scale(1.02);
+  box-shadow: 0 12px 36px #536078;
+  cursor: pointer;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.course-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px #243b64;
+}
+
+.carousel-indicators {
+  margin-bottom: 80px !important;
+}
+
+.carousel-indicators .curosel-indicator-color {
+  width: 12px !important;
+  height: 12px !important;
+  background-color: #f9b6b9 !important;
+  border-radius: 50%;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease !important;
+  display: inline-block;
+  border: 2px solid #a4204d !important;
+  box-sizing: border-box;
+}
+
+.carousel-indicators .curosel-indicator-color.active {
+  background-color: #243b64 !important;
+  transform: scale(1.2) !important;
+}
+
+.margin-20 {
+  margin: 20px;
+}
+
+/* Keyframes for rotation */
+@keyframes rotateLoader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.home-text-center {
+  position: relative;
+  padding-left: 30px;
+}
+
+.home-text-center::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  background: linear-gradient(to bottom, #a4204d, #f9636b);
+}
+
+/* Common styles for both prev and next buttons */
+.home .carousel-control-prev,
+.home .carousel-control-next,
+.btn-group .btn {
+  background-color: transparent;
+  /* Transparent button background */
+  border-radius: 50%;
+  /* Circular shape */
+  padding: 10px;
+  /* Adjust padding for button size */
+}
+
+.home .carousel-control-prev-icon,
+.home .carousel-control-next-icon,
+.btn-group .btn {
+  border-radius: 50% !important;
+  background: linear-gradient(to bottom, #a4204d, #f9636b) !important;
+  z-index: 1 !important;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 60px !important;
+}
+
+.home .carousel-control-prev-icon {
+  margin-left: -110px !important;
+}
+
+/* Styling the arrow inside the prev button */
+.home .carousel-control-prev-icon::after {
+  content: '\f053';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: blue !important;
+  font-size: 20px;
+}
+
+/* Styling the arrow inside the next button */
+.home .carousel-control-next-icon::before {
+  content: '\f054';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  color: blue !important;
+  font-size: 20px;
+}
+
+.mt-100 {
+  margin-top: 80px !important;
+}
+
+.container .row > div {
+  margin-bottom: 20px;
+  /* Optional: Add space between stacked columns on smaller screens */
+}
+
+.container .row .col-md-6 {
+  padding-right: 15px;
+  /* Adjust spacing between columns */
+  padding-left: 15px;
+  /* Adjust spacing between columns */
+}
+
+@media (min-width: 768px) {
+  .container .row .col-md-6 {
+    margin-bottom: 0;
+    /* Remove margin for larger screens */
+  }
+}
+
+.testimonial-container {
+  display: flex;
+  overflow: hidden;
+}
+
+.testimonial-card {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.testimonial-container button {
+  margin-top: 20px;
+}
+
+.btn-group {
+  margin-left: -100px !important;
+  margin-top: 50px !important;
+}
+
+.mtop-150 {
+  margin-top: 150px !important;
+}
+
+.mtop-120 {
+  margin-top: 120px !important;
+}
+
+.mleft-50 {
+  margin-left: 60px !important;
+}
+
+.mleft-200 {
+  margin-left: 250px !important;
+}
+
+.mbtm {
+  margin-bottom: -10px !important;
+}
+
+.mtop-80 {
+  margin-top: 80px !important;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .large-screen-img {
+    width: 75% !important;
+    height: auto !important;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  #carouselSecondary .carousel-inner img {
+    height: 300px !important;
+    object-fit: cover;
+  }
+
+  .heading-64 {
+    font-size: 1.75rem !important;
+  }
+
+  .para-17 {
+    font-size: 1rem !important;
+    margin-left: 10px !important;
+  }
+
+  .container.overflow-hidden {
+    margin-top: 20px !important;
+  }
+
+  .learn-tech-card {
+    padding: 20px !important;
+    font-size: 0.9rem !important;
+  }
+
+  .course-card {
+    padding: 15px !important;
+  }
+
+  .col-lg-6,
+  .col-md-12 {
+    margin-bottom: 20px;
+  }
+
+  .p-3 {
+    padding: 15px !important;
+  }
+}
+
+.floating-icon {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366; /* WhatsApp Green */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: floatUpDown 3s infinite alternate ease-in-out;
+  text-decoration: none; /* Remove any default underline */
+  border: none; /* Ensure no border */
+  outline: none; /* Remove focus outline */
+  box-shadow: none; /* Remove box shadow */
+}
+
+.floating-icon img {
+  width: 100%; /* Ensure the image covers the button */
+  height: 100%;
+  border-radius: 50%;
+}
+
+/* Call Icon (Right Side) */
+.call {
+  right: 20px;
+  top: 100px;
+  background-color: #b0cff0;
+  animation-delay: 1.5s;
+  border: none !important; /* Remove unwanted borders */
+}
+
+/* WhatsApp Icon (Left Side) */
+.whatsapp {
+  right: 20px;
+  top: 200px;
+  animation-delay: 0s;
+  border: none !important; /* Remove unwanted borders */
+}
+
+/* Call Icon (Right Side) */
+.call {
+  right: 20px;
+  top: 100px;
+  background-color: #b0cff0; /* Blue color for Call */
+  animation-delay: 1.5s;
+  border: 5px solid #4a97eb;
+}
+
+/* Floating Animation */
+@keyframes floatUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(30px);
+  }
+}
+
+/* .floating-icon:hover {
+  transform: scale(1.1);
+} */
+
+/* Input Focus Effect */
+.rows input:focus {
+  border: 1px solid rgb(69, 107, 232);
+  outline: none; /* Removes default blue outline */
+}
+
+/* Label Positioning */
+.rows input + label {
+  z-index: 1;
+  color: blue;
+  font-weight: lighter;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 12px; /* Adjusted for better alignment */
+  left: 15px; /* Adjust based on padding */
+  transition: 0.3s ease-in-out;
+}
+
+/* Move Label Up When Input is Focused or Filled */
+.rows input:focus + label,
+.rows input:not(:placeholder-shown) + label {
+  top: -10px;
+  font-size: 12px;
+  color: rgb(69, 107, 232);
+  background-color: white;
+  padding: 0 5px;
+}
+
+/* Common styles for all social icons */
+.social-icons {
+  position: fixed;
+  left: 20px;
+  top: 40%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 1000;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.3s ease-in-out,
+    box-shadow 0.3s;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Different animation delays for staggered effect */
+.icon.facebook {
+  animation-delay: 0.5s;
+}
+.icon.linkedin {
+  animation-delay: 1s;
+}
+.icon.gmail {
+  animation-delay: 1.5s;
+}
+.icon.twitter {
+  animation-delay: 2s;
+}
+
+/* Image styles */
+.icon img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Floating hover effect */
+.icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .btn-img img {
+    width: 40px;
+    height: auto;
+  }
+  .d-flex {
+    gap: 10px;
+  }
+}
+
+.navbar-toggler {
+  position: absolute;
+  top: 1px;
+  right: 15px;
+  z-index: 1050; /* Ensures it's on top */
+}
+
+@media (max-width: 768px) {
+  .logo-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 100% !important;
+    padding: 10px !important;
+    transition: all 0.3s ease-in-out !important;
+  }
+
+  /* Move logo, h1, and p to the top when menu is open */
+  .menu-open .logo-container {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    z-index: 1000 !important;
+    padding: 10px !important;
+  }
+
+  .logo-container img {
+    width: 40px !important; /* Smaller logo */
+    height: auto !important;
+    margin-right: 10px !important;
+  }
+
+  .text-container h1 {
+    font-size: 16px !important;
+    margin: 0 !important;
+  }
+
+  .text-container p {
+    font-size: 12px !important;
+    margin: 0 !important;
+  }
+
+  /* Keep hamburger menu fixed on the right */
+  .navbar-toggler {
+    position: fixed !important;
+
+    top: 15px !important;
+    right: 15px !important;
+    z-index: 2000 !important;
+  }
+
+  /* Hide the hamburger when menu is open */
+  .menu-open .navbar-toggler {
+    display: none !important;
+    margin: 100px;
+  }
+}
+.full-width-img {
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height (optional) */
+  object-fit: cover; /* Maintain aspect ratio & fill container */
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.animated-quote {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 2s ease-in-out forwards;
+}
+
+.highlight {
+  color: #f7022a; /* Highlight color for impact */
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.carousel-img-container {
+  width: 100%;
+  height: 650px; /* Set a fixed height */
+  overflow: hidden; /* Ensures images don’t exceed container */
+}
+
+.carousel-img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images maintain aspect ratio and fill the space */
+}
+
+@media (max-width: 768px) {
+  .carousel-img-container {
+    height: 250px; /* Smaller height on mobile */
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%; /* Increase clickable area */
+    height: 40px; /* Reduce height */
+    top: 50%; /* Ensure center alignment */
+  }
+
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    width: 20px; /* Reduce icon size */
+    height: 20px;
+  }
+}
+
+#placements-section {
+  margin-top: 800px; /* Adjust based on navbar height */
+}
+
+
+/* Base styles for larger screens */
+.navbar-nav {
+  display: flex;
+  justify-content: flex-end; /* Align items to the right by default */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-nav .nav-item {
+  margin-left: 20px; /* Space between navbar items */
+}
+
+/* Navbar links */
+.navbar-nav .nav-link {
+  padding: 10px 20px;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Mobile and tablet view styles (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Navbar base position */
+  .navbar {
+    position: fixed; /* Fix navbar at the top of the page */
+    top: 0;
+    right: 0; /* Align to the top-right corner */
+    width: 100%; /* Ensure full width */
+    padding: 10px 20px;
+    z-index: 9999; /* Ensure navbar stays on top */
+  }
+
+  /* Position the label at the top-right when menu is open */
+  .navbar.menu-open .logo-container {
+    position: absolute; /* Position logo at the top-right corner inside navbar */
+    top: 10px; /* Position it at the top */
+    right: 20px; /* Align it to the right */
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  /* Nav items stacking vertically */
+  .navbar-nav {
+    flex-direction: column; /* Stack navbar items vertically */
+    align-items: flex-end; /* Align items to the right */
+    justify-content: flex-start; /* Align items to the top */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Ensure full width of navbar items */
+  }
+
+  .navbar-nav .nav-item {
+    text-align: right; /* Align text to the right */
+    width: 100%; /* Ensure full width for each item */
+  }
+
+  .navbar-nav .nav-link {
+    padding: 10px 100px; /* Adjust padding for mobile */
+    width: 100%; /* Ensure links take full width of container */
+  }
+
+  /* Label (logo and text) inside navbar when menu is collapsed */
+  .logo-container {
+    display: flex;
+    margin: 10px;
+    justify-content: flex-start; /* Align logo and text to the left initially */
+    width: 100%; /* Ensure full width inside navbar */
+  }
+
+
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-text-center {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .home-text-center {
+      font-size: 1rem;
+  }
+}
+
+
+/* For larger screens (Laptop/Desktop view) */
+@media (min-width: 768px) {
+  .custom-title {
+    font-size: 3.5rem !important; /* Larger title font size for laptop/desktop */
+  }
+
+  .custom-paragraph {
+    font-size: 1.25rem !important; /* Larger paragraph font for laptop/desktop */
+  }
+
+  .custom-quote {
+    font-size: 1.5rem !important; /* Larger quote font for laptop/desktop */
+  }
+}
+
+/* For mobile screens (Mobile view) */
+@media (max-width: 767px) {
+  .custom-title {
+    font-size: 1.8rem !important;
+     /* Smaller title font size for mobile */
+  }
+
+  .custom-paragraph {
+    font-size: 1rem !important; /* Smaller paragraph font for mobile */
+  }
+
+  .custom-quote {
+    font-size: 1.2rem !important; /* Smaller quote font for mobile */
+  }
+}
+
+.placement-card {
+  position: relative;
+  top: -20px; /* Moves the card upward */
+  z-index: 10; /* Ensures it stays above other elements */
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Floating effect */
+  transition: transform 0.3s ease-in-out;
+}
+
+.placement-card:hover {
+  transform: translateY(-5px); /* Slight hover lift effect */
+}
