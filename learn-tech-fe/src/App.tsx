@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Components/Header/Header';
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Courses from './Components/Courses/Courses';
 import Testimonials from './Components/Testimonials/Testimonials';
 import { Footer } from './Components/Footer/Footer';
@@ -9,23 +8,24 @@ import { About } from './Components/AboutUs/About-us';
 import { Home } from './Components/Home/Home';
 import FloatingIcons from './Components/Pop-up/FloatIcons';
 import SocialIcons from './Components/Pop-up/SocialIcons';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
 function App() {
   return (
     <>
-      <BrowserRouter  basename="/learn-tech-it-solutions">
-        <Header></Header>
-        {/* <FloatingIcons></FloatingIcons> */}
-        <Routes>
-          <Route path='/' element={<Home></Home>}></Route>
-          <Route path='/about-us' element={<About></About>}></Route>
-          <Route path='/placements' element={<Placements></Placements>}></Route>
-          <Route path='/courses' element={<Courses></Courses>}></Route>
-          <Route path='/testimonials' element={<Testimonials></Testimonials>}></Route>
-        </Routes>
-        <Footer></Footer>
-      </BrowserRouter>
+      <Router basename="/learn-tech-it-solutions">
+      <Header />
+      {/* <FloatingIcons />  Uncomment this if needed */}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/placements" element={<Placements />} />
+        <Route path="/courses" element={<Courses />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+      </Routes>
+      <Footer />
+    </Router>
 
     </>
   );
