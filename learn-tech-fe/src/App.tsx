@@ -14,7 +14,7 @@ import SocialIcons from './Components/Pop-up/SocialIcons';
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter  basename="/learn-tech-it-solutions">
         <Header></Header>
         {/* <FloatingIcons></FloatingIcons> */}
         <Routes>
