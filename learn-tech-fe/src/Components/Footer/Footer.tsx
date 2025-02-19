@@ -128,7 +128,7 @@ export const Footer: React.FC = () => {
                   {/* Image Section */}
                   <div className="carousel-img-container ps-3">
                     <img
-                      src="/image/ccc1.jpg"
+                      src={`${process.env.PUBLIC_URL}/image/ccc1.jpg`}
                       className="img-fluid d-block w-100"
                       alt="Java Full Stack"
                       style={{ objectFit: "cover", minHeight: "300px" }}
@@ -153,7 +153,7 @@ export const Footer: React.FC = () => {
               <div className="card text-center p-3 h-100 course-card placement-card" data-aos="fade-up">
                 <a href={`tel:${mobileNumber}`} className="text-decoration-none">
                   <img
-                    src="/image/phone.png"
+                    src={`${process.env.PUBLIC_URL}/image/phone.png`}
                     alt="Call Us"
                     className="img-fluid mb-2"
                     style={{ width: "50px", height: "50px" }}
@@ -168,7 +168,7 @@ export const Footer: React.FC = () => {
               <div className="card text-center p-3 h-100 course-card course-card placement-card" data-aos="fade-up">
                 <a href={`https://wa.me/${whatsapp}`} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                   <img
-                    src="/image/whatsapp.svg"
+                    src={`${process.env.PUBLIC_URL}/image/whatsapp.svg`}
                     alt="Chat with us"
                     className="img-fluid mb-2"
                     style={{ width: "50px", height: "50px" }}
@@ -184,7 +184,7 @@ export const Footer: React.FC = () => {
 
                 <a href={`mailto:${email}`} className="text-decoration-none" data-aos="fade-up">
                   <img
-                    src="/image/mail.svg"
+                    src={`${process.env.PUBLIC_URL}/image/mail.svg`}
                     alt="Email Us"
                     className="img-fluid mb-2"
                     style={{ width: "50px", height: "50px" }}
@@ -200,7 +200,7 @@ export const Footer: React.FC = () => {
               <div className="card text-center p-3 h-100 course-card placement-card" data-aos="fade-up">
                 <a href={`https://www.linkedin.com/in/${linkedIn}`} target="_blank" rel="noopener noreferrer" className="text-decoration-none">
                   <img
-                    src="/image/linkedin.svg"
+                    src={`${process.env.PUBLIC_URL}/image/linkedin.svg`}
                     alt="LinkedIn Profile"
                     className="img-fluid mb-2"
                     style={{ width: "50px", height: "50px" }}
@@ -297,7 +297,7 @@ export const Footer: React.FC = () => {
             <div className="col-12 col-md-4">
               <div className="card-body" data-aos="fade-left">
                 <div className="logo-container mb-4">
-                  <img src="/image/l_t-nobg.png" alt="logo" />
+                  <img src={`${process.env.PUBLIC_URL}/image/l_t-nobg.png`} alt="logo" />
                   <div className="text-container">
                     <h1 className="heading-64">Learn Tech IT Solutions</h1>
                     <p className="para-17">
@@ -316,16 +316,16 @@ export const Footer: React.FC = () => {
 
               <div className="d-flex align-items-center flex-wrap">
                 <a href={`tel:${mobileNumber}`} className="btn p-1 btn-img">
-                  <img src="/image/phone.png" className="img-fluid" style={{ width: 40 }} alt="Phone" />
+                  <img src={`${process.env.PUBLIC_URL}/image/phone.png`} className="img-fluid" style={{ width: 40 }} alt="Phone" />
                 </a>
                 <a href={`https://wa.me/${whatsapp}`} className="btn p-1 btn-img">
-                  <img src="/image/whatsapp.svg" className="img-fluid" style={{ width: 40 }} alt="WhatsApp" />
+                  <img src={`${process.env.PUBLIC_URL}/image/whatsapp.svg`} className="img-fluid" style={{ width: 40 }} alt="WhatsApp" />
                 </a>
                 <a href={`mailto:${email}`} className="btn p-1 btn-img">
-                  <img src="/image/mail.svg" className="img-fluid" style={{ width: 40 }} alt="Email" />
+                  <img src={`${process.env.PUBLIC_URL}/image/mail.svg`} className="img-fluid" style={{ width: 40 }} alt="Email" />
                 </a>
                 <a href={`https://www.linkedin.com/in/${linkedIn}`} className="btn p-1 btn-img">
-                  <img src="/image/linkedin.svg" className="img-fluid" style={{ width: 40 }} alt="LinkedIn" />
+                  <img src={`${process.env.PUBLIC_URL}/image/linkedin.svg`} className="img-fluid" style={{ width: 40 }} alt="LinkedIn" />
                 </a>
               </div>
 

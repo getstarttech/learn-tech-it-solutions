@@ -9,116 +9,116 @@ const Courses: React.FC = () => {
   const courses = [
     {
       title: "Cloud Technology",
-      image: "/image/logo/logo1.jpg",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo1.jpg`,
     },
     {
       title: "AWS",
-      image: "/image/logo/logo-2.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo-2.png`,
     },
     {
       title: "Azure",
-      image: "/image/logo/logo4.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo4.png`,
     },
     {
       title: "Gcp",
-      image: "/image/logo/logo3.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo3.png`,
     },
     {
       title: "Linux",
-      image: "/image/logo/logo-unix.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo-unix.png`,
     },
     {
       title: "Unix",
-      image: "/image/logo/logo-linux.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo-linux.png`,
     },
     {
       title: "CCNA",
-      image: "/image/logo/logo-ccna.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo-ccna.png`,
     },
     {
       title: "C",
-      image: "/image/logo/logo6.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo6.png`,
     },
     {
       title: "C++",
-      image: "/image/logo/logo7.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo7.png`,
     },
     {
       title: "Python",
-      image: "/image/logo/logo8.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo8.png`,
     },
 
     {
       title: "Matlab",
-      image: "/image/logo/logo9.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo9.png`,
     },
     {
       title: "Java",
-      image: "/image/logo/logo10.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo10.png`,
     },
     {
       title: "Selenium",
-      image: "/image/logo/logo11.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo11.png`,
     },
     {
       title: "Mobile App Testing",
-      image: "/image/logo/logo12.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo12.png`,
     },
     {
       title: "Php",
-      image: "/image/logo/logo13.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo13.png`,
     },
     {
       title: ".Net",
-      image: "/image/logo/logo14.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo14.png`,
     },
     {
       title: "Android",
-      image: "/image/logo/logo15.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo15.png`,
     },
     {
       title: "R language",
-      image: "/image/logo/logo16.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo16.png`,
     },
     {
       title: "Sas",
-      image: "/image/logo/logo-sas.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo-sas.png`,
     },
     {
       title: "Informatica",
-      image: "/image/logo/logo19.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo19.png`,
     },
     {
       title: "Salesforce",
-      image: "/image/logo/logo18.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo18.png`,
     },
     {
       title: "Big Data Hadoop",
-      image: "/image/logo/logo21.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo21.png`,
     },
     {
       title: "Qtp",
-      image: "/image/logo/logo22.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo22.png`,
     },
     {
       title: "Load Runner",
-      image: "/image/logo/logo23.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo23.png`,
     },
     {
       title: "SQL DBA",
-      image: "/image/logo/logo24.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo24.png`,
     },
     {
       title: "Oracle DBA",
-      image: "/image/logo/logo-oracle.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo-oracle.png`,
     },
     {
       title: "Robotic Process Automation",
-      image: "/image/logo/logo26.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo26.png`,
     },
     {
       title: "Workday Training",
-      image: "/image/logo/logo27.png",
+      image: `${process.env.PUBLIC_URL}/image/logo/logo27.png`,
     },
 
   ];

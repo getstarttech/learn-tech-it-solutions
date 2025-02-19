@@ -8,37 +8,37 @@ const Testimonials = () => {
       name: "Hairsh",
       course: "DevOps Engineer",
       message: "I have learned so much in such a short time, and the experience was incredible!.",
-      image: "/image/ttt10.png",
+      image: `${process.env.PUBLIC_URL}/image/ttt10.png`,
     },
     {
       name: "Swathi",
       course: "Cloud Engineer",
       message: "This course gave me the confidence and skills to succeed in my career!",
-      image: "/image/ttt5.jpg",
+      image: `${process.env.PUBLIC_URL}/image/ttt5.jpg`,
     },
     {
       name: "Kowsick",
       course: "Linux & System Administration",
       message: "The instructor’s support made all the difference in my learning journey.",
-      image: "/image/ttt4.png",
+      image: `${process.env.PUBLIC_URL}/image/ttt4.png`,
     },
     {
       name: "Naveen Prabhu",
       course: "DevOps Engineer",
       message: "This program helped me turn my passion into a real career path!",
-      image: "/image/ttt16.jpg",
+      image: `${process.env.PUBLIC_URL}/image/ttt16.jpg"`,
     },
     {
       name: "Gowtham",
       course: "DevOps Engineerr",
       message: "A truly transformative learning experience that I will always value",
-      image: "/image/ttt1.png",
+      image: `${process.env.PUBLIC_URL}/image/ttt1.png`,
     },
     {
       name: "Selvam",
       course: "Linux & System Administration",
       message: "Thanks to this course, I feel fully prepared for the challenges ahead",
-      image: "/image/ttt12.jpg",
+      image: `${process.env.PUBLIC_URL}/image/ttt12.jpg`,
     },
     {
       name: "Vijayarangan",
@@ -50,19 +50,19 @@ const Testimonials = () => {
       name: "ManiKandan",
       course: "Cloud Engineer",
       message: "The hands-on experience in this course helped me gain practical skills immediately",
-      image: "/image/ttt16.jpg",
+      image: `${process.env.PUBLIC_URL}/image/ttt16.jpg`,
     },
     {
       name: "Lokesh",
       course: "DevOps Engineer",
       message: "I gained not only knowledge but also a network of like-minded peers.",
-      image: "/image/ttt10.png",
+      image: `${process.env.PUBLIC_URL}/image/ttt10.png`,
     },
     {
       name: "Swetha",
       course: "DevOps Engineer",
       message: "I have learned so much more than I expected and feel ready for what’s next!",
-      image: "/image/ttt7.jpg",
+      image: `${process.env.PUBLIC_URL}/image/ttt7.jpg`,
     },
   ];
 
@@ -122,7 +122,7 @@ const Testimonials = () => {
                   {/* Image Section */}
                   <div className="carousel-img-container col-12 col-md-6 ps-3">
                     <img
-                      src="/image/tt2.jpg"
+                      src={`${process.env.PUBLIC_URL}/image/tt2.jpg`}
                       className="img-fluid d-block w-100"
                       alt="Java Full Stack"
                       style={{ objectFit: "cover", minHeight: "300px" }}

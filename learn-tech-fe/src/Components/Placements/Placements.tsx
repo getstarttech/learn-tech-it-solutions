@@ -58,7 +58,7 @@ export const Placements = () => {
                                     {/* Right Side: Image Section */}
                                     <div className="carousel-img-container col-12 col-md-6 ps-3">
                                         <img
-                                            src="/image/pc4.jpg"
+                                            src={`${process.env.PUBLIC_URL}/image/pc4.jpg`}
                                             className="img-fluid d-block w-100"
                                             alt="Java Full Stack"
                                             style={{ objectFit: "cover", minHeight: "300px" }}

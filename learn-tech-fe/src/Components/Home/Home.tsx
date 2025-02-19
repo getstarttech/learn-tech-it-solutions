@@ -66,7 +66,7 @@ export const Home = () => {
                             {/* Image Section */}
                             <div className="carousel-img-container col-12 col-md-6 ps-3">
                                 <img
-                                    src="/image/homePage-2.jpg"
+                                    src={`${process.env.PUBLIC_URL}/image/homePage-2.jpg`}
                                     className="img-fluid d-block w-100"
                                     alt="Java Full Stack"
                                 />
@@ -88,7 +88,7 @@ export const Home = () => {
                             {/* Image Section */}
                             <div className="carousel-img-container col-12 col-md-6 ps-3">
                                 <img
-                                    src="/image/homePage-4.jpg"
+                                    src={`${process.env.PUBLIC_URL}/image/homePage-4.jpg`}
                                     className="img-fluid d-block w-100"
                                     alt="Java Full Stack"
                                 />
@@ -110,7 +110,7 @@ export const Home = () => {
                             {/* Image Section */}
                             <div className="carousel-img-container col-12 col-md-6 ps-3">
                                 <img
-                                    src="/image/homePage-1.jpg"
+                                    src={`${process.env.PUBLIC_URL}/image/homePage-1.jpg`}
                                     className="img-fluid d-block w-100"
                                     alt="Web Development"
                                 />

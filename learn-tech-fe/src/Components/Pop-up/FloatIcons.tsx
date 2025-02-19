@@ -15,7 +15,7 @@ const FloatingIcons = () => {
                 aria-label="Phone"
             >
                 <img
-                    src="/image/phone.png"
+                    src={`${process.env.PUBLIC_URL}/image/phone.png`}
                     className="img-fluid rounded-start course-card"
                     alt="Phone"
                 />
@@ -28,7 +28,7 @@ const FloatingIcons = () => {
                 aria-label="WhatsApp"
             >
                 <img
-                    src="/image/whatsapp.svg"
+                    src={`${process.env.PUBLIC_URL}/image/whatsapp.svg`}
                     className="img-fluid rounded-start course-card"
                     alt="WhatsApp"
                 />

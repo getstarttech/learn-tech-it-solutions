@@ -104,7 +104,7 @@ export const Query = () => {
                     <div className="col-md-6 d-flex justify-content-center align-items-center course-card card img-br"
                         data-aos="fade-right">
                         <img
-                            src="/image/faq-2.jpg"
+                            src={`${process.env.PUBLIC_URL}/image/faq-2.jpg`}
                             alt="Placements"
                             className="img-fluid"
                             style={{ borderRadius: "10px", maxHeight: "300px" }}

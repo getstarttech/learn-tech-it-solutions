@@ -16,7 +16,7 @@ const Header: React.FC = () => {
   return (
     <header className={`header common-bg-color ${isNavOpen ? 'menu-open' : ''}`}>
       <div className="logo-container">
-        <img src="/image/l_t-nobg.png" alt="logo" onClick={() => navigate('/')} />
+        <img src={`${process.env.PUBLIC_URL}/image/l_t-nobg.png`} alt="logo" onClick={() => navigate('/')} />
         <div className="text-container">
           <h1 className="heading-64">Learn Tech IT Solutions</h1>
           <p className="para-17"><i>Shape Your Career</i></p>
