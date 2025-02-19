@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate, useLocation, Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
   const navigate = useNavigate();
@@ -8,8 +8,8 @@ const Header: React.FC = () => {
 
   const handleNavClick = (path: string) => {
     navigate(path);
-    setIsNavOpen(false); 
- 
+    setIsNavOpen(false);
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -50,14 +50,16 @@ const Header: React.FC = () => {
                 { path: '/contact-us', label: 'Contact Us' },
               ].map(({ path, label }) => (
                 <li className="nav-item" key={path}>
-                  <a
+                  <Link
                     className={`nav-link btn-pointer ${location.pathname === path ? 'active' : ''}`}
-                    onClick={() => handleNavClick(path)}
+                    to={`${process.env.PUBLIC_URL}${path}`}  // Fix here!
+                    onClick={() => setIsNavOpen(false)}
                   >
                     {label}
-                  </a>
+                  </Link>
                 </li>
               ))}
+
             </ul>
           </div>
         </div>

@@ -25,7 +25,7 @@ export const About = () => {
                 <div className="carousel-inner glass-effect">
                   <div className="carousel-item active ">
                     <img
-                      src="/image/about-5.jpg"
+                      src={`${process.env.PUBLIC_URL}/image/about-5.jpg`}
                       className="d-block w-100"
                       alt="Slide 1"
                       style={{ height: "500px", objectFit: "cover", borderRadius: "10px" }}
@@ -33,7 +33,7 @@ export const About = () => {
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="/image/about-3.png"
+                      src={`${process.env.PUBLIC_URL}/image/about-3.png`}
                       className="d-block w-100"
                       alt="Slide 2"
                       style={{ height: "500px", objectFit: "cover", borderRadius: "10px" }}
@@ -41,7 +41,7 @@ export const About = () => {
                   </div>
                   <div className="carousel-item">
                     <img
-                      src="/image/about-2.png"
+                      src={`${process.env.PUBLIC_URL}/image/about-2.png`}
                       className="d-block w-100"
                       alt="Slide 3"
                       style={{ height: "500px", objectFit: "cover", borderRadius: "10px" }}
