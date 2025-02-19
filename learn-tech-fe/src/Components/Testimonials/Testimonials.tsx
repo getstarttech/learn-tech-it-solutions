@@ -26,7 +26,7 @@ const Testimonials = () => {
       name: "Naveen Prabhu",
       course: "DevOps Engineer",
       message: "This program helped me turn my passion into a real career path!",
-      image: `${process.env.PUBLIC_URL}/image/ttt16.jpg"`,
+      image: `${process.env.PUBLIC_URL}/image/ttt16.jpg`,
     },
     {
       name: "Gowtham",
@@ -44,7 +44,7 @@ const Testimonials = () => {
       name: "Vijayarangan",
       course: "Cloud & System Administration",
       message: "The skills I gained here have already opened doors to new opportunities!",
-      image: "/image/ttt14.jpg",
+      image: `${process.env.PUBLIC_URL}/image/ttt14.jpg`,
     },
     {
       name: "ManiKandan",
