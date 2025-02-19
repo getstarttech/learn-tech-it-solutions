@@ -318,53 +318,50 @@ html {
   background: linear-gradient(to bottom, #a4204d, #f9636b);
 }
 
-/* Common styles for both prev and next buttons */
+/* Common styles for buttons */
 .home .carousel-control-prev,
-.home .carousel-control-next,
-.btn-group .btn {
+.home .carousel-control-next {
   background-color: transparent;
-  /* Transparent button background */
   border-radius: 50%;
-  /* Circular shape */
   padding: 10px;
-  /* Adjust padding for button size */
 }
 
 .home .carousel-control-prev-icon,
-.home .carousel-control-next-icon,
-.btn-group .btn {
+.home .carousel-control-next-icon {
   border-radius: 50% !important;
   background: linear-gradient(to bottom, #a4204d, #f9636b) !important;
-  z-index: 1 !important;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60px !important;
 }
 
-.home .carousel-control-prev-icon {
-  margin-left: -110px !important;
+/* Proper positioning instead of margin-left */
+.home .carousel-control-prev {
+  left: -20px !important;
 }
 
-/* Styling the arrow inside the prev button */
+.home .carousel-control-next {
+  right: -20px !important;
+}
+
+/* Styling the arrow inside prev button */
 .home .carousel-control-prev-icon::after {
-  content: '\f053';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  color: blue !important;
+  content: '‹'; /* Use Unicode arrow instead */
   font-size: 20px;
+  font-weight: bold;
+  color: blue !important;
 }
 
-/* Styling the arrow inside the next button */
-.home .carousel-control-next-icon::before {
-  content: '\f054';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  color: blue !important;
+/* Styling the arrow inside next button */
+.home .carousel-control-next-icon::after {
+  content: '›'; /* Use Unicode arrow instead */
   font-size: 20px;
+  font-weight: bold;
+  color: blue !important;
 }
+
 
 .mt-100 {
   margin-top: 80px !important;
@@ -772,14 +769,23 @@ body {
 @media (max-width: 768px) {
   .carousel-control-prev,
   .carousel-control-next {
-    width: 10%; /* Increase clickable area */
-    height: 40px; /* Reduce height */
-    top: 50%; /* Ensure center alignment */
+    width: 40px; /* Keep button size reasonable */
+    height: 40px; 
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-control-prev {
+    left: 5px; /* Adjust positioning */
+  }
+
+  .carousel-control-next {
+    right: 5px;
   }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    width: 20px; /* Reduce icon size */
+    width: 20px;
     height: 20px;
   }
 }
@@ -927,3 +933,4 @@ body {
 .placement-card:hover {
   transform: translateY(-5px); /* Slight hover lift effect */
 }
+
