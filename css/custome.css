@@ -318,53 +318,53 @@ html {
   background: linear-gradient(to bottom, #a4204d, #f9636b);
 }
 
-/* Common styles for both prev and next buttons */
+/* Common styles for buttons */
 .home .carousel-control-prev,
-.home .carousel-control-next,
-.btn-group .btn {
+.home .carousel-control-next {
   background-color: transparent;
-  /* Transparent button background */
   border-radius: 50%;
-  /* Circular shape */
   padding: 10px;
-  /* Adjust padding for button size */
+}
+.home .carousel-control-next-icon {
+  margin-right: -70px !important;
 }
 
 .home .carousel-control-prev-icon,
-.home .carousel-control-next-icon,
-.btn-group .btn {
+.home .carousel-control-next-icon {
   border-radius: 50% !important;
   background: linear-gradient(to bottom, #a4204d, #f9636b) !important;
-  z-index: 1 !important;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 60px !important;
 }
 
-.home .carousel-control-prev-icon {
-  margin-left: -110px !important;
+/* Proper positioning instead of margin-left */
+.home .carousel-control-prev {
+  margin-left: -70px !important;
 }
 
-/* Styling the arrow inside the prev button */
+.home .carousel-control-next {
+  right: -20px !important;
+}
+
+/* Styling the arrow inside prev button */
 .home .carousel-control-prev-icon::after {
-  content: '\f053';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  color: blue !important;
+  content: '‹'; /* Use Unicode arrow instead */
   font-size: 20px;
+  font-weight: bold;
+  color: blue !important;
 }
 
-/* Styling the arrow inside the next button */
-.home .carousel-control-next-icon::before {
-  content: '\f054';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  color: blue !important;
+/* Styling the arrow inside next button */
+.home .carousel-control-next-icon::after {
+  content: '›'; /* Use Unicode arrow instead */
   font-size: 20px;
+  font-weight: bold;
+  color: blue !important;
 }
+
 
 .mt-100 {
   margin-top: 80px !important;
@@ -387,11 +387,6 @@ html {
     margin-bottom: 0;
     /* Remove margin for larger screens */
   }
-}
-
-.testimonial-container {
-  display: flex;
-  overflow: hidden;
 }
 
 .testimonial-card {
@@ -489,8 +484,8 @@ body {
 
 .floating-icon {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 80px;  /* Default size for larger screens (tablet, desktop) */
+  height: 80px;
   border-radius: 50%;
   background-color: #25d366; /* WhatsApp Green */
   color: white;
@@ -503,6 +498,14 @@ body {
   border: none; /* Ensure no border */
   outline: none; /* Remove focus outline */
   box-shadow: none; /* Remove box shadow */
+}
+
+/* Media Query for mobile view */
+@media (max-width: 767px) {
+  .floating-icon {
+    width: 60px;  /* Size for mobile view */
+    height: 60px; /* Size for mobile view */
+  }
 }
 
 .floating-icon img {
@@ -523,11 +526,21 @@ body {
 /* WhatsApp Icon (Left Side) */
 .whatsapp {
   right: 20px;
-  top: 200px;
+  top: 250px;
   animation-delay: 0s;
   border: none !important; /* Remove unwanted borders */
 }
 
+
+@media (max-width: 767px) {
+  .whatsapp {
+    right: 20px;
+    top: 200px;
+    animation-delay: 0s;
+    border: none !important; /* Remove unwanted borders */
+  }
+  
+}
 /* Call Icon (Right Side) */
 .call {
   right: 20px;
@@ -918,12 +931,42 @@ body {
 
 .placement-card {
   position: relative;
-  top: -20px; /* Moves the card upward */
-  z-index: 10; /* Ensures it stays above other elements */
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Floating effect */
+  top: -20px; 
+  z-index: 10; 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
 .placement-card:hover {
   transform: translateY(-5px); /* Slight hover lift effect */
 }
+
+.floating-icons {
+  display: block; 
+}
+
+/* Hide floating icons on larger screens */
+@media (min-width: 768px) {
+  .floating-icons {
+    display: block; 
+  }
+}
+
+
+
+.testimonial-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px; /* Set max width to prevent overflow */
+  position: relative;
+  height: auto;
+}
+
+.testimonial-container .card {
+  flex: 0 0 100%;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
+

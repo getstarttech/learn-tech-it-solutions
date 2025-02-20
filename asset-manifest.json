@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/learn-tech-it-solutions/static/css/main.c90c17c5.css",
-    "main.js": "/learn-tech-it-solutions/static/js/main.f18a60d6.js",
+    "main.js": "/learn-tech-it-solutions/static/js/main.447d7508.js",
     "static/js/453.949bddd1.chunk.js": "/learn-tech-it-solutions/static/js/453.949bddd1.chunk.js",
     "index.html": "/learn-tech-it-solutions/index.html",
     "main.c90c17c5.css.map": "/learn-tech-it-solutions/static/css/main.c90c17c5.css.map",
-    "main.f18a60d6.js.map": "/learn-tech-it-solutions/static/js/main.f18a60d6.js.map",
+    "main.447d7508.js.map": "/learn-tech-it-solutions/static/js/main.447d7508.js.map",
     "453.949bddd1.chunk.js.map": "/learn-tech-it-solutions/static/js/453.949bddd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c90c17c5.css",
-    "static/js/main.f18a60d6.js"
+    "static/js/main.447d7508.js"
   ]
 }
