@@ -101,9 +101,9 @@ const Testimonials = () => {
                 <div className="d-flex flex-column flex-md-row w-100">
 
                  
-                    <div className="col-12 col-md-6 d-flex flex-column p-5 home-screen-container">
+                <div className="col-12 col-md-6 d-flex flex-column p-5 text-container">
                       <div className="text-start mt-2 mt-5">
-                        <h1 className="main-color custom-title">Testimonials</h1>
+                        <h2 className="main-color custom-title">Testimonials</h2>
                         <p className="custom-paragraph">
                           <a href="/" className="text-violet text-decoration-none">
                             Home
@@ -171,18 +171,15 @@ const Testimonials = () => {
 
             {/* Right side: Testimonial content */}
             <div className="col-md-6 t-color">
-              <div
-                className="testimonial-container d-flex overflow-hidden course-card glass-card border-0"
-                style={{ width: "100%" }}
-              >
+            <div className="testimonial-container course-card glass-card border-0">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
                     className={`card h-100 text-center border-0 position-relative t-color `}
                     style={{
+                      display: index === currentIndex ? "block" : "none", // Show only active testimonial
+                      width: "100%",
                       minWidth: "100%",
-                      transform: `translateX(-${currentIndex * 100}%)`,
-                      transition: "transform 0.5s ease-in-out",
                     }}
                   >
                     {testimonial.image && (
@@ -194,14 +191,11 @@ const Testimonials = () => {
                           style={{
                             width: "120px",
                             height: "120px",
-                            maxWidth: "100%",
                             objectFit: "cover",
                             borderRadius: "50%",
                             border: "3px solid #fff",
                             boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-                            aspectRatio: "1 / 1",
                           }}
-                          loading="lazy"
                         />
                       </div>
                     )}
@@ -209,7 +203,7 @@ const Testimonials = () => {
                     <div className="card-body">
                       <h5 className="card-title">{testimonial.name}</h5>
                       <p className="card-subtitle text-muted">{testimonial.course}</p>
-                      <p className="card-text mt-3">`{testimonial.message}`</p>
+                      <p className="card-text mt-3">{testimonial.message}</p>
                     </div>
                   </div>
                 ))}

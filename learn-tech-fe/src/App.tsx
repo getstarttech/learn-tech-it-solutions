@@ -16,7 +16,7 @@ function App() {
     <>
       <Router basename="/learn-tech-it-solutions">
       <Header />
-      {/* <FloatingIcons />  Uncomment this if needed */}
+      <FloatingIcons></FloatingIcons>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />

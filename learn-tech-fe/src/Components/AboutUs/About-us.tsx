@@ -87,8 +87,8 @@ export const About = () => {
                 <p>
                   Our training programs focus on upgrading students` skills
                   with hands-on projects and real-world scenarios. We offer
-                  courses in <strong>Full Stack Web Development, DevOps,
-                    Cloud,</strong> and <strong>Data Science</strong>.
+                  courses in courses in <strong>DevOps,
+                  Cloud,</strong> and <strong>Linux  etc.,</strong>.
                 </p>
                 <p>
                   Our trainers bring industrial experience from top companies,

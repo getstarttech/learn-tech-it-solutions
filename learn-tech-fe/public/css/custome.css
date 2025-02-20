@@ -325,6 +325,9 @@ html {
   border-radius: 50%;
   padding: 10px;
 }
+.home .carousel-control-next-icon {
+  margin-right: -70px !important;
+}
 
 .home .carousel-control-prev-icon,
 .home .carousel-control-next-icon {
@@ -339,7 +342,7 @@ html {
 
 /* Proper positioning instead of margin-left */
 .home .carousel-control-prev {
-  left: -20px !important;
+  margin-left: -70px !important;
 }
 
 .home .carousel-control-next {
@@ -384,11 +387,6 @@ html {
     margin-bottom: 0;
     /* Remove margin for larger screens */
   }
-}
-
-.testimonial-container {
-  display: flex;
-  overflow: hidden;
 }
 
 .testimonial-card {
@@ -486,8 +484,8 @@ body {
 
 .floating-icon {
   position: fixed;
-  width: 60px;
-  height: 60px;
+  width: 80px;  /* Default size for larger screens (tablet, desktop) */
+  height: 80px;
   border-radius: 50%;
   background-color: #25d366; /* WhatsApp Green */
   color: white;
@@ -500,6 +498,14 @@ body {
   border: none; /* Ensure no border */
   outline: none; /* Remove focus outline */
   box-shadow: none; /* Remove box shadow */
+}
+
+/* Media Query for mobile view */
+@media (max-width: 767px) {
+  .floating-icon {
+    width: 60px;  /* Size for mobile view */
+    height: 60px; /* Size for mobile view */
+  }
 }
 
 .floating-icon img {
@@ -520,11 +526,21 @@ body {
 /* WhatsApp Icon (Left Side) */
 .whatsapp {
   right: 20px;
-  top: 200px;
+  top: 250px;
   animation-delay: 0s;
   border: none !important; /* Remove unwanted borders */
 }
 
+
+@media (max-width: 767px) {
+  .whatsapp {
+    right: 20px;
+    top: 200px;
+    animation-delay: 0s;
+    border: none !important; /* Remove unwanted borders */
+  }
+  
+}
 /* Call Icon (Right Side) */
 .call {
   right: 20px;
@@ -769,23 +785,14 @@ body {
 @media (max-width: 768px) {
   .carousel-control-prev,
   .carousel-control-next {
-    width: 40px; /* Keep button size reasonable */
-    height: 40px; 
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  .carousel-control-prev {
-    left: 5px; /* Adjust positioning */
-  }
-
-  .carousel-control-next {
-    right: 5px;
+    width: 10%; /* Increase clickable area */
+    height: 40px; /* Reduce height */
+    top: 50%; /* Ensure center alignment */
   }
 
   .carousel-control-prev-icon,
   .carousel-control-next-icon {
-    width: 20px;
+    width: 20px; /* Reduce icon size */
     height: 20px;
   }
 }
@@ -924,13 +931,42 @@ body {
 
 .placement-card {
   position: relative;
-  top: -20px; /* Moves the card upward */
-  z-index: 10; /* Ensures it stays above other elements */
-  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Floating effect */
+  top: -20px; 
+  z-index: 10; 
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
 
 .placement-card:hover {
   transform: translateY(-5px); /* Slight hover lift effect */
 }
+
+.floating-icons {
+  display: block; 
+}
+
+/* Hide floating icons on larger screens */
+@media (min-width: 768px) {
+  .floating-icons {
+    display: block; 
+  }
+}
+
+
+
+.testimonial-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px; /* Set max width to prevent overflow */
+  position: relative;
+  height: auto;
+}
+
+.testimonial-container .card {
+  flex: 0 0 100%;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+
 

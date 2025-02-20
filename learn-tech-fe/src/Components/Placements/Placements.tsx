@@ -37,9 +37,9 @@ export const Placements = () => {
                             <div className="carousel-item active">
                                 <div className="d-flex flex-column flex-md-row w-100">
                                     {/* Left Side: Text Section */}
-                                    <div className="col-12 col-md-6 d-flex flex-column  p-5 home-screen-container">
+                                    <div className="col-12 col-md-6 d-flex flex-column  p-5 text-container">
                                         <div className="text-start  mt-2 mt-5">
-                                            <h1 className="main-color custom-title">Placements</h1>
+                                            <h2 className="main-color custom-title">Placements</h2>
                                             <p className="custom-paragraph">
                                                 <a href="/" className="text-violet text-decoration-none">
                                                     Home
