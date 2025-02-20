@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { sendReview } from "../../API/QueryAPI";
 import { Loader } from "../Loader/Loader";
 import { toast, ToastContainer } from "react-toastify";
@@ -12,6 +12,7 @@ export const Footer: React.FC = () => {
   const whatsapp = process.env.REACT_APP_WHATSAPP;
   const email = process.env.REACT_APP_EMAIL;
   const linkedIn = process.env.REACT_APP_LINKEDIN;
+  
 
   const initialUserDetails = {
     name: "",
@@ -28,6 +29,7 @@ export const Footer: React.FC = () => {
   const [userData, setUserData] = useState(initialUserDetails);
   const [error, setError] = useState(initialErrorMessage);
   const [loader, setLoader] = useState(false);
+  const navigate = useNavigate();
 
   const onChangeData = (event: any) => {
     const { id, value } = event.target;
@@ -80,6 +82,12 @@ export const Footer: React.FC = () => {
     } finally {
       setLoader(false);
     }
+  };
+
+  const handleNavClick = (path: string) => {
+    navigate(path); 
+ 
+    window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
 
@@ -346,7 +354,7 @@ export const Footer: React.FC = () => {
                 ].map((item, index) => (
                   <a
                     key={index}
-                    href={item.link}
+                    onClick={() => handleNavClick(item.link)}
                     className="nav-link text-white text-decoration-none mt-3"
                   >
                     <i className="bi bi-chevron-double-right me-3 t-color"></i>

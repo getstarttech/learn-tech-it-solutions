@@ -100,23 +100,23 @@ const Testimonials = () => {
               <div className="carousel-item active">
                 <div className="d-flex flex-column flex-md-row w-100">
 
-                 
-                <div className="col-12 col-md-6 d-flex flex-column p-5 text-container">
-                      <div className="text-start mt-2 mt-5">
-                        <h2 className="main-color custom-title">Testimonials</h2>
-                        <p className="custom-paragraph">
-                          <a href="/" className="text-violet text-decoration-none">
-                            Home
-                          </a>{" "}
-                          / <a href="/testimonials" className="text-decoration-none t-color">Testimonials</a>
-                        </p>
-                      </div>
-                      <div className="text-center home-text-center home-30 mt-5">
-                        <p className="animated-quote custom-quote">
-                          <span className="highlight">Our graduates  success speaks volumes</span> check out their testimonials!.
-                        </p>
-                      </div>
+
+                  <div className="col-12 col-md-6 d-flex flex-column p-5 text-container">
+                    <div className="text-start mt-2 mt-5">
+                      <h2 className="main-color custom-title">Testimonials</h2>
+                      <p className="custom-paragraph">
+                        <a href="/" className="text-violet text-decoration-none">
+                          Home
+                        </a>{" "}
+                        / <a href="/testimonials" className="text-decoration-none t-color">Testimonials</a>
+                      </p>
                     </div>
+                    <div className="text-center home-text-center home-30 mt-5">
+                      <p className="animated-quote custom-quote">
+                        <span className="highlight">Our graduates  success speaks volumes</span> check out their testimonials!.
+                      </p>
+                    </div>
+                  </div>
 
 
                   {/* Image Section */}
@@ -150,28 +150,56 @@ const Testimonials = () => {
               <h6>What Our Students Say</h6>
               {/* Navigation buttons */}
               <div className="btn-group" id="id-btn">
-                <button
-                  className="btn"
-                  onClick={goToPrevious}
-                  disabled={currentIndex === 0}
-                >
-                  <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Previous</span>
-                </button>
-                <button
-                  className="btn"
-                  onClick={goToNext}
-                  disabled={currentIndex === testimonials.length - 1}
-                >
-                  <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span className="visually-hidden">Next</span>
-                </button>
+                <div className="btn-group" id="id-btn">
+                  <button
+                    className="btn"
+                    onClick={goToPrevious}
+                    disabled={currentIndex === 0}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-chevron-left"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M11.354 1.354a.5.5 0 0 1 0 .708L5.707 8l5.647 5.938a.5.5 0 0 1-.708.708l-6-6.5a.5.5 0 0 1 0-.708l6-6.5a.5.5 0 0 1 .708 0z"
+                      />
+                    </svg>
+                    <span className="visually-hidden">Previous</span>
+                  </button>
+
+                  <button
+                    className="btn"
+                    onClick={goToNext}
+                    disabled={currentIndex === testimonials.length - 1}
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="16"
+                      height="16"
+                      fill="currentColor"
+                      className="bi bi-chevron-right"
+                      viewBox="0 0 16 16"
+                    >
+                      <path
+                        fillRule="evenodd"
+                        d="M4.646 1.354a.5.5 0 0 1 .708 0l6 6.5a.5.5 0 0 1 0 .708l-6 6.5a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.062a.5.5 0 0 1 0-.708z"
+                      />
+                    </svg>
+                    <span className="visually-hidden">Next</span>
+                  </button>
+                </div>
+
               </div>
             </div>
 
             {/* Right side: Testimonial content */}
             <div className="col-md-6 t-color">
-            <div className="testimonial-container course-card glass-card border-0">
+              <div className="testimonial-container course-card glass-card border-0">
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}

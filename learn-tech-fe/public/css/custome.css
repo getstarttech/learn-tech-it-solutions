@@ -970,3 +970,64 @@ body {
 }
 
 
+
+/* Styling for the button container */
+#id-btn {
+  display: flex;
+  justify-content: center;
+  gap: 10px; /* Adds spacing between buttons */
+}
+
+/* Styling for the previous and next buttons */
+#id-btn .btn {
+  background-color: #a4204d; /* Light background */
+  border: 1px solid #243B64; /* Subtle border */
+  border-radius: 50%; /* Circular buttons */
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  left : 110%;
+  bottom:20%;
+}
+
+/* Hover effect */
+#id-btn .btn:hover {
+  background-color: #f9636b; /* Bootstrap primary color */
+  border-color: #243B64;
+  color: #243B64;
+}
+
+/* Disabled button styles */
+#id-btn .btn:disabled {
+  background-color: #a4204d;
+  border-color: #243B64;
+  cursor: not-allowed;
+}
+
+/* SVG icon styles */
+#id-btn .btn svg {
+  width: 18px;
+  height: 18px;
+  fill: #243B64 !important; /* Default icon color */
+}
+
+/* Hover effect for icons */
+#id-btn .btn:hover svg {
+  fill:  #a4204d !important;
+}
+@media (min-width: 1024px) {  
+  #id-btn .btn {
+    width: 60px; /* Bigger button */
+    height: 60px;
+    font-size: 20px; /* Slightly larger icons */
+    left:70%;
+  }
+  
+  #id-btn .btn svg {
+    width: 24px;
+    height: 24px;
+  }
+}
