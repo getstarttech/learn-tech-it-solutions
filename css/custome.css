@@ -783,18 +783,13 @@ body {
 }
 
 @media (max-width: 768px) {
-  .carousel-control-prev,
-  .carousel-control-next {
-    width: 10%; /* Increase clickable area */
-    height: 40px; /* Reduce height */
-    top: 50%; /* Ensure center alignment */
+  .home .carousel-control-prev,
+  .home .carousel-control-next {
+    width: 50%; /* Increase clickable area */
+    height: 50px; /* Reduce height */
+    top: 80%; /* Ensure center alignment */
   }
 
-  .carousel-control-prev-icon,
-  .carousel-control-next-icon {
-    width: 20px; /* Reduce icon size */
-    height: 20px;
-  }
 }
 
 #placements-section {
