@@ -505,6 +505,7 @@ body {
   .floating-icon {
     width: 60px;  /* Size for mobile view */
     height: 60px; /* Size for mobile view */
+    top:50%;
   }
 }
 
@@ -812,7 +813,7 @@ body {
 
 /* Navbar links */
 .navbar-nav .nav-link {
-  padding: 20px 0px 10px 20px;
+  padding: 20px 8px 10px 20px;
   display: inline-block;
   text-align: end;
 }
@@ -855,7 +856,7 @@ body {
   }
 
   .navbar-nav .nav-link {
-    padding: 10px 0px 10px 100px; /* Adjust padding for mobile */
+    padding: 10px 50px 10px 100px; /* Adjust padding for mobile */
     width: 100%; /* Ensure links take full width of container */
   }
 
