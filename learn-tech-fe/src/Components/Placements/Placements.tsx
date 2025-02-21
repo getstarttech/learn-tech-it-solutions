@@ -54,7 +54,7 @@ export const Placements = () => {
                                             </p>
                                         </div>
                                         <div className="text-center home-text-center home-30 mt-5">
-                                            <p className="animated-quote custom-quote">
+                                            <p className="animated-quote">
                                                 Your future is created by what you do today, not tomorrow.<br />
                                                 <span className="highlight" style={{marginLeft:"200px"}}>- Robert Kiyosaki</span>
                                             </p>

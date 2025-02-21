@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useLocation, useNavigate } from "react-router-dom";
 
@@ -117,8 +117,8 @@ const Testimonials = () => {
                         / <a href="/testimonials" className="text-decoration-none t-color">Testimonials</a>
                       </p>
                     </div>
-                    <div className="text-center home-text-center home-30 mt-5">
-                      <p className="animated-quote custom-quote">
+                    <div className="text-center home-text-center home-30 mt-5 custom-quote">
+                      <p className="animated-quote">
                         <span className="highlight">Our graduates  success speaks volumes</span> check out their testimonials!.
                       </p>
                     </div>

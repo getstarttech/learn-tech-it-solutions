@@ -61,7 +61,7 @@ html {
 .text-container h1 {
   margin: 0;
   color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .home-screen-container h1 {
@@ -73,7 +73,7 @@ html {
 .text-container p {
   margin: 5px 0 0 0;
   color: #061b3f;
-  font-size: 12px;
+  font-size: 20px;
 }
 
 .navbar {
@@ -696,18 +696,18 @@ body {
   }
 
   .logo-container img {
-    width: 40px !important; /* Smaller logo */
+    width: 50px !important; /* Smaller logo */
     height: auto !important;
     margin-right: 10px !important;
   }
 
   .text-container h1 {
-    font-size: 16px !important;
+    font-size: 25px !important;
     margin: 0 !important;
   }
 
   .text-container p {
-    font-size: 12px !important;
+    font-size: 20px !important;
     margin: 0 !important;
   }
 
@@ -812,9 +812,9 @@ body {
 
 /* Navbar links */
 .navbar-nav .nav-link {
-  padding: 10px 20px;
+  padding: 20px 0px 10px 20px;
   display: inline-block;
-  text-align: center;
+  text-align: end;
 }
 
 /* Mobile and tablet view styles (max-width: 768px) */
@@ -855,7 +855,7 @@ body {
   }
 
   .navbar-nav .nav-link {
-    padding: 10px 100px; /* Adjust padding for mobile */
+    padding: 10px 0px 10px 100px; /* Adjust padding for mobile */
     width: 100%; /* Ensure links take full width of container */
   }
 
@@ -904,7 +904,7 @@ body {
   }
 
   .custom-quote {
-    font-size: 1.5rem !important; /* Larger quote font for laptop/desktop */
+    font-size: 25px !important; /* Larger quote font for laptop/desktop */
   }
 }
 
@@ -920,7 +920,7 @@ body {
   }
 
   .custom-quote {
-    font-size: 1.2rem !important; /* Smaller quote font for mobile */
+    font-size: 25px !important; /* Smaller quote font for mobile */
   }
 }
 

@@ -125,8 +125,8 @@ export const Footer: React.FC = () => {
                         / <a href="/contact-us" className="text-decoration-none t-color">Contact Us</a>
                       </p>
                     </div>
-                    <div className="text-center home-text-center home-30 mt-5">
-                      <p className="animated-quote custom-quote">
+                    <div className="text-center home-text-center home-30 mt-5 custom-quote">
+                      <p className="animated-quote">
                         Looking for placement opportunities? <br /> <span className="highlight">Reach out to us, </span> and let`s shape your future together.<br />
                       </p>
                     </div>
