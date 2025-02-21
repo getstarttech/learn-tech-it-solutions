@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { FAQ } from "../FAQ/FAQ";
 import Testimonials from "../Testimonials/Testimonials";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 export const Placements = () => {
 
@@ -9,6 +9,7 @@ export const Placements = () => {
     const [companies, setCompanies] = useState(0);
     const [currentStudents, setCurrentStudents] = useState(0);
     const location = useLocation();
+    const navigate = useNavigate();
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -18,6 +19,11 @@ export const Placements = () => {
         }, 50);
         return () => clearInterval(interval);
     }, []);
+    const handleNavClick = (path: string) => {
+        navigate(path); 
+     
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      };
 
     return (
         <>
@@ -41,7 +47,7 @@ export const Placements = () => {
                                         <div className="text-start  mt-2 mt-5">
                                             <h2 className="main-color custom-title">Placements</h2>
                                             <p className="custom-paragraph">
-                                                <a href="/" className="text-violet text-decoration-none">
+                                                <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
                                                     Home
                                                 </a>{" "}
                                                 / <a href="/placements" className="text-decoration-none t-color">Placements</a>

@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
                     <div className="text-start  mt-2 mt-5">
                       <h2 className="main-color custom-title">Contact Us</h2>
                       <p className="custom-paragraph">
-                        <a href="/" className="text-violet text-decoration-none">
+                        <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
                           Home
                         </a>{" "}
                         / <a href="/contact-us" className="text-decoration-none t-color">Contact Us</a>

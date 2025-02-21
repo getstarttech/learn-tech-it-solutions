@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 const Testimonials = () => {
+  const navigate = useNavigate();
   const testimonials = [
     {
       name: "Hairsh",
@@ -80,6 +81,11 @@ const Testimonials = () => {
       setCurrentIndex((prevIndex) => prevIndex + 1);
     }
   };
+  const handleNavClick = (path: string) => {
+    navigate(path); 
+ 
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
 
   return (
     <>
@@ -105,7 +111,7 @@ const Testimonials = () => {
                     <div className="text-start mt-2 mt-5">
                       <h2 className="main-color custom-title">Testimonials</h2>
                       <p className="custom-paragraph">
-                        <a href="/" className="text-violet text-decoration-none">
+                        <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
                           Home
                         </a>{" "}
                         / <a href="/testimonials" className="text-decoration-none t-color">Testimonials</a>
