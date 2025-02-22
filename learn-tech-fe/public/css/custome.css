@@ -1239,3 +1239,30 @@ body {
     height: 90px; /* Increase navbar height */
   }
 }
+
+
+.logo-text1 {
+  font-size: 22px;
+  font-family: "Exo 2";
+  font-weight: normal;
+  white-space: nowrap;
+  margin-top: -5px;
+}
+
+.logo-text1-down {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Exo 2";
+  font-style: italic;
+  color: #243b64;
+}
+
+.logo-container1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container1 img {
+  height: 70px;
+  margin-left: -20px;
+}

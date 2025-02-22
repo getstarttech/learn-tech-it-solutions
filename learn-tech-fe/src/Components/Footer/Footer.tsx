@@ -12,7 +12,7 @@ export const Footer: React.FC = () => {
   const whatsapp = process.env.REACT_APP_WHATSAPP;
   const email = process.env.REACT_APP_EMAIL;
   const linkedIn = process.env.REACT_APP_LINKEDIN;
-  
+
 
   const initialUserDetails = {
     name: "",
@@ -85,8 +85,8 @@ export const Footer: React.FC = () => {
   };
 
   const handleNavClick = (path: string) => {
-    navigate(path); 
- 
+    navigate(path);
+
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -119,7 +119,7 @@ export const Footer: React.FC = () => {
                     <div className="text-start">
                       <h2 className="main-color custom-title">Contact Us</h2>
                       <p className="custom-paragraph">
-                        <a onClick={()=>handleNavClick("")} className="text-violet text-decoration-none">
+                        <a onClick={() => handleNavClick("")} className="text-violet text-decoration-none">
                           Home
                         </a>{" "}
                         / <a href="/contact-us" className="text-decoration-none t-color">Contact Us</a>
@@ -304,13 +304,11 @@ export const Footer: React.FC = () => {
             {/* First Column: Address */}
             <div className="col-12 col-md-4">
               <div className="card-body" data-aos="fade-left">
-                <div className="logo-container mb-4">
+                <div className="logo-container1 mx-auto text-start " onClick={() => navigate('/')}>
                   <img src={`${process.env.PUBLIC_URL}/image/l_t-nobg.png`} alt="logo" />
-                  <div className="text-container">
-                    <h1 className="heading-64">Learn Tech IT Solutions</h1>
-                    <p className="para-17">
-                      <i>Shape Your Career</i>
-                    </p>
+                  <div className="logo-text-wrapper">
+                    <span className="logo-text1">Learn Tech IT Solutions</span>
+                    <span className="logo-text1-down">Shape Your Career</span>
                   </div>
                 </div>
                 <h5 className="card-title mb-3" style={{ fontSize: "x-large" }}>
