@@ -18,7 +18,7 @@ function App() {
       <Header />
       <FloatingIcons></FloatingIcons>
       <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/placements" element={<Placements />} />
         <Route path="/courses" element={<Courses />} />

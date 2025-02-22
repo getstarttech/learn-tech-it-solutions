@@ -1239,11 +1239,56 @@ body {
   }
 
   .logo-text {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
+    font-weight: normal;
     font-family: "Exo 2" ;
     white-space: nowrap;
     margin-top: -15px;
   }
 
+  .nav-links a.active { 
+    color: #243b64 !important;
+    text-decoration: none;
+    text-shadow: 2px 2px 5px rgba(36, 59, 100, 0.6); /* Shadow effect */
+}
+
+  
+
+  .nav-links a {
+    position: relative;
+    color: white; /* Default text color */
+    text-decoration: none;
+    padding-bottom: 5px; /* Space for the underline */
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-links a.active {
+    color: #243b64 !important;
+    text-decoration: none;
+  }
+  
+  
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #243b64;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+    
+  }
+
+  
+ 
+}
+
+
+.text-size, .text-size-down {
+  font-family: "ECO";
 }
