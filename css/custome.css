@@ -24,7 +24,6 @@ html {
   text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-
 .header {
   background: linear-gradient(135deg, #a4204d, #f9636b);
   backdrop-filter: blur(10px);
@@ -73,7 +72,7 @@ html {
 .text-container p {
   margin: 5px 0 0 0;
   color: #061b3f;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .navbar {
@@ -84,9 +83,7 @@ html {
   margin-left: 40px;
   color: #ffffff !important;
   font-weight: 500;
-  transition:
-    color 0.3s ease,
-    transform 0.3s ease;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .navbar-nav .nav-link:hover,
@@ -168,10 +165,13 @@ html {
 }
 
 @keyframes rotateLoader {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
-
 
 .btn-pointer {
   cursor: pointer;
@@ -234,9 +234,7 @@ html {
 .glass-effect {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .glass-effect:hover {
@@ -255,9 +253,7 @@ html {
 }
 
 .course-card {
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
 
@@ -275,9 +271,7 @@ html {
   height: 12px !important;
   background-color: #f9b6b9 !important;
   border-radius: 50%;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease !important;
+  transition: background-color 0.3s ease, transform 0.3s ease !important;
   display: inline-block;
   border: 2px solid #a4204d !important;
   box-sizing: border-box;
@@ -309,7 +303,7 @@ html {
 }
 
 .home-text-center::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -351,7 +345,7 @@ html {
 
 /* Styling the arrow inside prev button */
 .home .carousel-control-prev-icon::after {
-  content: '‹'; /* Use Unicode arrow instead */
+  content: "‹"; /* Use Unicode arrow instead */
   font-size: 20px;
   font-weight: bold;
   color: blue !important;
@@ -359,12 +353,11 @@ html {
 
 /* Styling the arrow inside next button */
 .home .carousel-control-next-icon::after {
-  content: '›'; /* Use Unicode arrow instead */
+  content: "›"; /* Use Unicode arrow instead */
   font-size: 20px;
   font-weight: bold;
   color: blue !important;
 }
-
 
 .mt-100 {
   margin-top: 80px !important;
@@ -484,7 +477,7 @@ body {
 
 .floating-icon {
   position: fixed;
-  width: 80px;  /* Default size for larger screens (tablet, desktop) */
+  width: 80px; /* Default size for larger screens (tablet, desktop) */
   height: 80px;
   border-radius: 50%;
   background-color: #25d366; /* WhatsApp Green */
@@ -503,9 +496,9 @@ body {
 /* Media Query for mobile view */
 @media (max-width: 767px) {
   .floating-icon {
-    width: 60px;  /* Size for mobile view */
+    width: 60px; /* Size for mobile view */
     height: 60px; /* Size for mobile view */
-    top:50%;
+    top: 50%;
   }
 }
 
@@ -532,7 +525,6 @@ body {
   border: none !important; /* Remove unwanted borders */
 }
 
-
 @media (max-width: 767px) {
   .whatsapp {
     right: 20px;
@@ -540,7 +532,6 @@ body {
     animation-delay: 0s;
     border: none !important; /* Remove unwanted borders */
   }
-  
 }
 /* Call Icon (Right Side) */
 .call {
@@ -614,9 +605,7 @@ body {
   justify-content: center;
   background-color: white;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-  transition:
-    transform 0.3s ease-in-out,
-    box-shadow 0.3s;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
   opacity: 0;
   animation: fadeIn 1s ease-in-out forwards;
 }
@@ -708,7 +697,7 @@ body {
   }
 
   .text-container p {
-    font-size: 20px !important;
+    font-size: 22px !important;
     margin: 0 !important;
   }
 
@@ -790,13 +779,11 @@ body {
     height: 50px; /* Reduce height */
     top: 80%; /* Ensure center alignment */
   }
-
 }
 
 #placements-section {
   margin-top: 800px; /* Adjust based on navbar height */
 }
-
 
 /* Base styles for larger screens */
 .navbar-nav {
@@ -867,8 +854,6 @@ body {
     justify-content: flex-start; /* Align logo and text to the left initially */
     width: 100%; /* Ensure full width inside navbar */
   }
-
-
 }
 
 .carousel-item {
@@ -889,10 +874,9 @@ body {
 
 @media (max-width: 768px) {
   .home-text-center {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 }
-
 
 /* For larger screens (Laptop/Desktop view) */
 @media (min-width: 768px) {
@@ -913,7 +897,7 @@ body {
 @media (max-width: 767px) {
   .custom-title {
     font-size: 1.8rem !important;
-     /* Smaller title font size for mobile */
+    /* Smaller title font size for mobile */
   }
 
   .custom-paragraph {
@@ -927,8 +911,8 @@ body {
 
 .placement-card {
   position: relative;
-  top: -20px; 
-  z-index: 10; 
+  top: -20px;
+  z-index: 10;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease-in-out;
 }
@@ -938,17 +922,15 @@ body {
 }
 
 .floating-icons {
-  display: block; 
+  display: block;
 }
 
 /* Hide floating icons on larger screens */
 @media (min-width: 768px) {
   .floating-icons {
-    display: block; 
+    display: block;
   }
 }
-
-
 
 .testimonial-container {
   display: flex;
@@ -965,8 +947,6 @@ body {
   transition: transform 0.5s ease-in-out;
 }
 
-
-
 /* Styling for the button container */
 #id-btn {
   display: flex;
@@ -977,7 +957,7 @@ body {
 /* Styling for the previous and next buttons */
 #id-btn .btn {
   background-color: #a4204d; /* Light background */
-  border: 1px solid #243B64; /* Subtle border */
+  border: 1px solid #243b64; /* Subtle border */
   border-radius: 50%; /* Circular buttons */
   width: 40px;
   height: 40px;
@@ -985,21 +965,21 @@ body {
   justify-content: center;
   align-items: center;
   transition: all 0.3s ease-in-out;
-  left : 110%;
-  bottom:20%;
+  left: 110%;
+  bottom: 20%;
 }
 
 /* Hover effect */
 #id-btn .btn:hover {
   background-color: #f9636b; /* Bootstrap primary color */
-  border-color: #243B64;
-  color: #243B64;
+  border-color: #243b64;
+  color: #243b64;
 }
 
 /* Disabled button styles */
 #id-btn .btn:disabled {
   background-color: #a4204d;
-  border-color: #243B64;
+  border-color: #243b64;
   cursor: not-allowed;
 }
 
@@ -1007,23 +987,282 @@ body {
 #id-btn .btn svg {
   width: 18px;
   height: 18px;
-  fill: #243B64 !important; /* Default icon color */
+  fill: #243b64 !important; /* Default icon color */
 }
 
 /* Hover effect for icons */
 #id-btn .btn:hover svg {
-  fill:  #a4204d !important;
+  fill: #a4204d !important;
 }
-@media (min-width: 1024px) {  
+@media (min-width: 1024px) {
   #id-btn .btn {
     width: 60px; /* Bigger button */
     height: 60px;
     font-size: 20px; /* Slightly larger icons */
-    left:70%;
+    left: 70%;
   }
-  
+
   #id-btn .btn svg {
     width: 24px;
     height: 24px;
   }
+}
+
+/* src/Navbar.css */
+/* NAVBAR */
+
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 80px; /* Navbar height */
+  background: linear-gradient(135deg, #a4204d, #f9636b);
+  color: white;
+  z-index: 1000;
+}
+
+/* Fix body padding to prevent content from going under navbar */
+body {
+  padding-top: 80px; /* Same as navbar height */
+}
+
+/* NAVBAR LEFT (LOGO) */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+/* LOGO CONTAINER */
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-container img {
+  height: 70px; /* Adjusted size */
+  margin-top: -5px;
+  margin-left: 10px;
+}
+
+/* LOGO TEXT */
+.logo-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.logo-text {
+  font-size: 22px;
+  font-family: "Exo 2";
+  font-weight: normal;
+  white-space: nowrap;
+  margin-top: -5px;
+}
+
+.logo-text-down {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Exo 2";
+  font-style: italic;
+  color: #243b64;
+}
+
+/* MENU ICON (FOR MOBILE) */
+.menu-icon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  background: none;
+  border: none;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+/* NAVIGATION LINKS */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  cursor: pointer;
+  margin-left: auto;
+  padding-right: 50px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Exo 2";
+}
+
+/* RESPONSIVE NAVBAR (FOR MOBILE & TABLETS) */
+@media (max-width: 1020px) {
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #a4204d, #f9636b);
+    display: none;
+    padding: 15px 0;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+  }
+}
+
+/* SMALL SCREEN TEXT SIZE */
+@media (max-width: 360px) {
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .logo-text-down {
+    font-size: 12px;
+  }
+}
+
+/* FIX NAVBAR FOR 1020px - 1180px */
+@media (min-width: 1020px) and (max-width: 1180px) {
+  .nav-links {
+    font-size: 18px !important;
+    gap: 5px;
+    padding-right: 30px;
+  }
+
+  .logo-container img {
+    height: 60px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
+/* LARGE SCREEN NAVBAR */
+@media (min-width: 1024px) {
+  .nav-links {
+    font-size: 18px;
+    display: flex;
+    gap: 25px;
+    margin-top: -5px;
+    align-items: center;
+  }
+
+  .logo-container img {
+    height: 75px;
+    margin-left: 20px;
+  }
+
+  .logo-text {
+    font-size: 25px;
+    margin-top: -10px;
+  }
+
+  .nav-links a.active {
+    color: #243b64 !important;
+    text-shadow: 2px 2px 5px rgba(36, 59, 100, 0.6);
+  }
+
+  .nav-links a {
+    position: relative;
+    text-decoration: none;
+    padding-bottom: 5px;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #243b64;
+    transition: width 0.3s ease-in-out;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+}
+
+/* FIXED FONT FAMILY */
+.text-size, .text-size-down {
+  font-family: "Exo 2"; /* Fixed incorrect "ECO" font */
+}
+@media (min-width: 1440px) { 
+  .nav-links {
+    font-size: 23px !important; /* Increase font size */
+    padding-right: 70px; /* Adjust right padding */
+  }
+
+  .logo-text {
+    font-size: 28px; /* Increase logo text size */
+  }
+
+  .logo-text-down {
+    font-size: 18px; /* Increase subtitle size */
+  }
+
+  .logo-container img {
+    height: 100px; /* Adjust logo size */
+    margin-left: 30px;
+  }
+
+  .navbar {
+    height: 90px; /* Increase navbar height */
+  }
+}
+
+
+.logo-text1 {
+  font-size: 22px;
+  font-family: "Exo 2";
+  font-weight: normal;
+  white-space: nowrap;
+  margin-top: -5px;
+}
+
+.logo-text1-down {
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Exo 2";
+  font-style: italic;
+  color: #243b64;
+}
+
+.logo-container1 {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container1 img {
+  height: 70px;
+  margin-left: -20px;
 }
