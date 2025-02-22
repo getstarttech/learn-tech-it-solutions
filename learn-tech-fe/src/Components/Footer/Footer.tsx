@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { sendReview } from "../../API/QueryAPI";
 import { Loader } from "../Loader/Loader";
@@ -30,6 +30,11 @@ export const Footer: React.FC = () => {
   const [error, setError] = useState(initialErrorMessage);
   const [loader, setLoader] = useState(false);
   const navigate = useNavigate();
+  const [forceUpdate, setForceUpdate] = useState(false);
+
+  useEffect(() => {
+    toast.clearWaitingQueue(); // Only clear queued toasts, not active ones
+  }, [location.pathname]);
 
   const onChangeData = (event: any) => {
     const { id, value } = event.target;
@@ -64,25 +69,28 @@ export const Footer: React.FC = () => {
   };
 
   const onClickSubmit = async (event: any) => {
-    event.preventDefault();
-
-    if (!showError(userData)) return;
-
-    setLoader(true);
-    try {
-      const response = await sendReview(userData);
-      if (response?.status === 200) {
+  event.preventDefault();
+  
+  if (!showError(userData)) return;
+  
+  setLoader(true);
+  try {
+    const response = await sendReview(userData);
+    if (response?.status === 200) {
+      toast.success("Review submitted successfully!", { autoClose: 2000 });
+      setForceUpdate(prev => !prev); // Force re-render
+      setTimeout(() => {
         setUserData(initialUserDetails);
         setError(initialErrorMessage);
-        toast.success("Review submitted successfully!", { autoClose: 2000 });
-      }
-    } catch (error: any) {
-      console.error("Error sending query:", error.message);
-      toast.error("Failed to submit Review. Please try again.", { autoClose: 2000 });
-    } finally {
-      setLoader(false);
+      }, 500);
     }
-  };
+  } catch (error: any) {
+    toast.error("Failed to submit review. Please try again.", { autoClose: 2000 });
+  } finally {
+    setLoader(false);
+  }
+};
+  
 
   const handleNavClick = (path: string) => {
     navigate(path);

@@ -5,12 +5,14 @@ import Courses from "../Courses/Courses";
 import { About } from "../AboutUs/About-us";
 import { FAQ } from "../FAQ/FAQ";
 import { Query } from "../Query/Query";
+import { ToastContainer } from "react-toastify";
 
 export const Home = () => {
 
     return (
         <>
             {/* Main Carousel */}
+            <ToastContainer />
             <div
                 id="carouselMain"
                 className="carousel slide home"
@@ -52,10 +54,6 @@ export const Home = () => {
                             {/* Text Section */}
                             <div className="col-12 col-md-6 d-flex align-items-center justify-content-center p-3 mt-3">
                                 <div className="text-center home-text-center home-30 mt-3">
-                                    {/* <p className="animated-quote ">
-                                        At <span className="highlight home-30">Learn-Tech</span>, we don’t just teach, we shape futures! <br />
-                                        <span className="highlight home-30">Keep learning, keep growing!</span>
-                                    </p> */}
                                     <p className="animated-quote">
                                        At <span className="highlight">Learn-Tech</span>&nbsp;we don’t just teach, we shape futures! <br/>Keep learning, keep growing!
                                     </p>

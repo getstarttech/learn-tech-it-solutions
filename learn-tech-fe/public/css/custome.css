@@ -1064,7 +1064,7 @@ body {
 
 .logo-text {
   font-size: 22px;
-  font-family: "Exo 2";
+  font-family: "Exo 2" !important;
   font-weight: normal;
   white-space: nowrap;
   margin-top: -5px;
@@ -1073,7 +1073,7 @@ body {
 .logo-text-down {
   font-size: 14px;
   font-weight: normal;
-  font-family: "Exo 2";
+  font-family: "Exo 2" !important;
   font-style: italic;
   color: #243b64;
 }
@@ -1106,7 +1106,7 @@ body {
 .nav-links li a {
   color: white;
   text-decoration: none;
-  font-family: "Exo 2";
+  font-family: "Exo 2" !important;
 }
 
 /* RESPONSIVE NAVBAR (FOR MOBILE & TABLETS) */
@@ -1214,7 +1214,7 @@ body {
 
 /* FIXED FONT FAMILY */
 .text-size, .text-size-down {
-  font-family: "Exo 2"; /* Fixed incorrect "ECO" font */
+  font-family: "Exo 2" !important; /* Fixed incorrect "ECO" font */
 }
 @media (min-width: 1440px) { 
   .nav-links {
@@ -1243,7 +1243,7 @@ body {
 
 .logo-text1 {
   font-size: 22px;
-  font-family: "Exo 2";
+  font-family: "Exo 2" !important;
   font-weight: normal;
   white-space: nowrap;
   margin-top: -5px;
@@ -1252,7 +1252,7 @@ body {
 .logo-text1-down {
   font-size: 14px;
   font-weight: normal;
-  font-family: "Exo 2";
+  font-family: "Exo 2" !important;
   font-style: italic;
   color: #243b64;
 }

@@ -1,8 +1,9 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { sendQuery } from "../../API/QueryAPI";
 import { Loader } from "../Loader/Loader";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useLocation } from "react-router-dom";
 
 export const Query = () => {
     const initialUserDetails = {
@@ -26,6 +27,11 @@ export const Query = () => {
     const [userData, setUserData] = useState(initialUserDetails);
     const [error, setError] = useState(initialErrorMessage);
     const [loading, setLoading] = useState(false);
+    const location = useLocation();
+
+    useEffect(() => {
+        toast.dismiss(); // Clear any previous toasts
+      }, [location.pathname]);
 
     const onChangeData = (event: any) => {
         const { id, value } = event.target;
