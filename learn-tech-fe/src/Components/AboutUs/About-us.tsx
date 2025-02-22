@@ -7,7 +7,7 @@ export const About = () => {
       {/* vision & mission content */}
 
       <section id="about-section ">
-      <div className="container overflow-hidden mb-5 "
+      <div className="container overflow-hidden mb-3"
         id="about-section"
         style={{ marginTop: location.pathname !== '/about-us' ? '20px' : "80px" }} >
 
@@ -15,7 +15,7 @@ export const About = () => {
         <div className="container overflow-hidden">
           <div className="row g-5 mt-2">
             {/* Left Column with Secondary Carousel */}
-            <div className="col-12 col-md-6 pe-md-4 pt-5 mt-5">
+            <div className="col-12 col-md-6 pe-md-4 pt-5 mt-1">
               <div
                 id="carouselSecondary"
                 className="carousel slide"

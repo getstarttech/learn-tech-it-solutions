@@ -33,13 +33,13 @@ export const Placements = () => {
                     <div
                         id="carouselMain"
                         className="carousel slide"
-                        style={{ marginTop: "80px", marginRight: "15px" }}
+                        style={{ marginTop: "50px", marginRight: "15px" }}
                         data-aos="fade-right"
                         data-bs-ride="carousel"
                         data-bs-interval="3000"
                     >
                         {/* Carousel Items */}
-                        <div className="carousel-inner mt-5" style={{ height: "500px" }}>
+                        <div className="carousel-inner mt-3" style={{ height: "500px" }}>
                             <div className="carousel-item active">
                                 <div className="d-flex flex-column flex-md-row w-100">
                                     {/* Left Side: Text Section */}

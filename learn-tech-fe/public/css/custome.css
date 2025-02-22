@@ -1012,8 +1012,7 @@ body {
 /* NAVBAR */
 
 
-
-
+/* NAVBAR */
 .navbar {
   display: flex;
   position: fixed !important;
@@ -1026,31 +1025,15 @@ body {
   height: 80px; /* Navbar height */
   background: linear-gradient(135deg, #a4204d, #f9636b);
   color: white;
-  z-index: 1000; 
-
+  z-index: 1000;
 }
 
+/* Fix body padding to prevent content from going under navbar */
 body {
-  padding-top: 15px; /* Same as navbar height */
+  padding-top: 80px; /* Same as navbar height */
 }
 
-/* .navbar {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
-  height: 80px;
-  background: linear-gradient(135deg, #a4204d, #f9636b);
-  color: white;
-  z-index: 1000; 
-}
- */
-
-/* LEFT SECTION - LOGO & MENU */
+/* NAVBAR LEFT (LOGO) */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -1060,20 +1043,19 @@ body {
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 10px;
   cursor: pointer;
   margin: 0;
   padding: 0;
 }
 
 .logo-container img {
-  height: 90px;
-  margin-top: -10px; /* Remove any extra space */
-  margin-left: 1px; /* Remove any extra space */
-  padding: 0; /* Remove any extra space */
-  vertical-align: middle; /* Align logo properly */
+  height: 70px; /* Adjusted size */
+  margin-top: -5px;
+  margin-left: 10px;
 }
 
-/* LOGO TEXT WRAPPER */
+/* LOGO TEXT */
 .logo-text-wrapper {
   display: flex;
   flex-direction: column;
@@ -1081,23 +1063,24 @@ body {
 }
 
 .logo-text {
-  font-size: 20px;
-  font-family: "Exo 2" ;
-  font-weight: bold;
+  font-size: 22px;
+  font-family: "Exo 2";
+  font-weight: normal;
   white-space: nowrap;
-  margin-top: -15px;
+  margin-top: -5px;
 }
 
 .logo-text-down {
-  font-size: 15px;
+  font-size: 14px;
   font-weight: normal;
-  font-family: "Exo 2" ;
-  font-style: italic; 
-  color: #243b64; 
+  font-family: "Exo 2";
+  font-style: italic;
+  color: #243b64;
 }
-/* MENU ICON */
+
+/* MENU ICON (FOR MOBILE) */
 .menu-icon {
-  display: none; /* Hide on large screens */
+  display: none;
   font-size: 24px;
   cursor: pointer;
   color: white;
@@ -1110,164 +1093,109 @@ body {
   z-index: 1000;
 }
 
-/* NAV LINKS */
+/* NAVIGATION LINKS */
 .nav-links {
   list-style: none;
   display: flex;
-  gap:40px;
+  gap: 2px;
   cursor: pointer;
-
-  margin-left: auto; /* Align menu to the right */
+  margin-left: auto;
+  padding-right: 50px;
 }
 
 .nav-links li a {
   color: white;
   text-decoration: none;
+  font-family: "Exo 2";
 }
 
-/* RESPONSIVE */
-@media (max-width: 768px) {
+/* RESPONSIVE NAVBAR (FOR MOBILE & TABLETS) */
+@media (max-width: 1020px) {
   .menu-icon {
     display: block;
   }
 
   .nav-links {
     position: absolute;
-    top: 90px;
+    top: 80px;
     left: 0;
     right: 0;
-    font-family: "Exo 2" ;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    cursor: pointer;
-    background: linear-gradient(135deg, #a4204d, #f9636b);
     flex-direction: column;
     align-items: center;
+    background: linear-gradient(135deg, #a4204d, #f9636b);
     display: none;
+    padding: 15px 0;
   }
 
   .nav-links.open {
     display: flex;
-    cursor: pointer;
+  }
 
+  .nav-links li {
+    padding: 10px 0;
   }
 }
 
+/* SMALL SCREEN TEXT SIZE */
 @media (max-width: 360px) {
   .logo-text {
-    font-size: 16px; /* Reduce font size for small screens */
+    font-size: 18px;
   }
 
   .logo-text-down {
-    font-size: 12px; /* Reduce subtitle font size */
+    font-size: 12px;
   }
 }
 
-
-
-@media (max-width: 768px) {
-  .menu-icon {
-    display: block; /* Show hamburger menu only on small screens */
-  }
-
+/* FIX NAVBAR FOR 1020px - 1180px */
+@media (min-width: 1020px) and (max-width: 1180px) {
   .nav-links {
-    position: absolute;
-    top: 90px;
-    font-family: "Exo 2" ;
-
-    left: 0;
-    right: 0;
-    background: linear-gradient(135deg, #a4204d, #f9636b);
-    flex-direction: column;
-    align-items: center;
-    display: none; /* Initially hidden */
-    cursor: pointer;
-
-  }
-
-  .nav-links.open {
-    display: flex;
-    cursor: pointer;
-
-  }
-}
-
-
-
-@media (min-width: 1024px) { 
-  .nav-links {
-    font-size: 23px;
-    cursor: pointer;
-    font-family: "Exo 2" ;
-    font-weight: normal;
-    font-weight: normal;
-    list-style: none;
-    display: flex;
-    gap: 40px;
-    margin: 0;
-    padding: 0;
-    margin-top: -10px;
-    margin-left: auto;
-    align-items: center;
-    padding-right: 50px;
-  }
-
-
-  .logo-container {
-    display: flex;
-    align-items: center;
-    gap: 10px; /* Adds space between logo and text */
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-  }
-
-  .logo-text-wrapper {
-    display: flex;
-    flex-direction: column;
-    line-height: 1.2;
-    margin-left: 10px; /* Adds space between logo and text */
+    font-size: 18px !important;
+    gap: 5px;
+    padding-right: 30px;
   }
 
   .logo-container img {
-    height: 90px;
-    margin-top: -10px; /* Remove any extra space */
-    margin-left: 20px; /* Remove any extra space */
+    height: 60px;
+  }
 
-    padding: 0; /* Remove any extra space */
-    vertical-align: middle; /* Align logo properly */
+  .logo-text {
+    font-size: 20px;
+  }
+}
+
+/* LARGE SCREEN NAVBAR */
+@media (min-width: 1024px) {
+  .nav-links {
+    font-size: 18px;
+    display: flex;
+    gap: 25px;
+    margin-top: -5px;
+    align-items: center;
+  }
+
+  .logo-container img {
+    height: 75px;
+    margin-left: 20px;
   }
 
   .logo-text {
     font-size: 25px;
-    font-weight: normal;
-    font-family: "Exo 2" ;
-    white-space: nowrap;
-    margin-top: -15px;
+    margin-top: -10px;
   }
 
-  .nav-links a.active { 
+  .nav-links a.active {
     color: #243b64 !important;
-    text-decoration: none;
-    text-shadow: 2px 2px 5px rgba(36, 59, 100, 0.6); /* Shadow effect */
-}
-
-  
+    text-shadow: 2px 2px 5px rgba(36, 59, 100, 0.6);
+  }
 
   .nav-links a {
     position: relative;
-    color: white; /* Default text color */
     text-decoration: none;
-    padding-bottom: 5px; /* Space for the underline */
+    padding-bottom: 5px;
     transition: color 0.3s ease-in-out;
   }
-  
-  .nav-links a.active {
-    color: #243b64 !important;
-    text-decoration: none;
-  }
-  
-  
+
   .nav-links a::after {
     content: "";
     position: absolute;
@@ -1278,17 +1206,36 @@ body {
     background-color: #243b64;
     transition: width 0.3s ease-in-out;
   }
-  
+
   .nav-links a:hover::after {
     width: 100%;
-    
   }
-
-  
- 
 }
 
-
+/* FIXED FONT FAMILY */
 .text-size, .text-size-down {
-  font-family: "ECO";
+  font-family: "Exo 2"; /* Fixed incorrect "ECO" font */
+}
+@media (min-width: 1440px) { 
+  .nav-links {
+    font-size: 23px !important; /* Increase font size */
+    padding-right: 70px; /* Adjust right padding */
+  }
+
+  .logo-text {
+    font-size: 28px; /* Increase logo text size */
+  }
+
+  .logo-text-down {
+    font-size: 18px; /* Increase subtitle size */
+  }
+
+  .logo-container img {
+    height: 100px; /* Adjust logo size */
+    margin-left: 30px;
+  }
+
+  .navbar {
+    height: 90px; /* Increase navbar height */
+  }
 }

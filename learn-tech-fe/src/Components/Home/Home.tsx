@@ -14,7 +14,7 @@ export const Home = () => {
             <div
                 id="carouselMain"
                 className="carousel slide home"
-                style={{ marginTop: "80px", marginBottom: "80px", marginRight: "15px" }}
+                style={{ marginTop: "30px", marginBottom: "50px", marginRight: "15px" }}
                 data-aos="fade-right"
                 data-bs-ride="carousel"
                 data-bs-interval="3000"
@@ -46,12 +46,12 @@ export const Home = () => {
                 </div>
 
                 {/* Carousel Items */}
-                <div className="carousel-inner mt-5">
+                <div className="carousel-inner mt-3">
                     <div className="carousel-item active">
                         <div className="d-flex flex-column flex-md-row w-100">
                             {/* Text Section */}
-                            <div className="col-12 col-md-6 d-flex align-items-center justify-content-center p-3 mt-5">
-                                <div className="text-center home-text-center home-30 mt-5">
+                            <div className="col-12 col-md-6 d-flex align-items-center justify-content-center p-3 mt-3">
+                                <div className="text-center home-text-center home-30 mt-3">
                                     {/* <p className="animated-quote ">
                                         At <span className="highlight home-30">Learn-Tech</span>, we don’t just teach, we shape futures! <br />
                                         <span className="highlight home-30">Keep learning, keep growing!</span>

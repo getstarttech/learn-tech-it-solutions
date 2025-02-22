@@ -145,7 +145,7 @@ const Courses: React.FC = () => {
         className="text-center t-color heading-64 "
         id="course-section"
         data-aos="fade-right"
-        style={{ marginTop: "180px", marginBottom: "50px" }}
+        style={{ marginTop: "100px", marginBottom: "70px" }}
       >
         <i className="bi bi-book-half me-2"></i> Discover Our Courses
       </h1>

@@ -96,7 +96,7 @@ const Testimonials = () => {
           <div
             id="carouselMain"
             className="carousel slide"
-            style={{ marginTop: "80px", marginRight: "15px" }}
+            style={{ marginTop: "50px", marginRight: "15px" }}
             data-aos="fade-right"
             data-bs-ride="carousel"
             data-bs-interval="3000"
