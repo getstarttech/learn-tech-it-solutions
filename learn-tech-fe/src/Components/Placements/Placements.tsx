@@ -43,11 +43,11 @@ export const Placements = () => {
                             <div className="carousel-item active">
                                 <div className="d-flex flex-column flex-md-row w-100">
                                     {/* Left Side: Text Section */}
-                                    <div className="col-12 col-md-6 d-flex flex-column  p-5 text-container">
-                                        <div className="text-start  mt-2 mt-5">
+                                    <div className="col-12 col-md-6 d-flex flex-column  ps-5 text-container">
+                                        <div className="text-start">
                                             <h2 className="main-color custom-title">Placements</h2>
                                             <p className="custom-paragraph">
-                                                <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
+                                                <a onClick={()=>handleNavClick("")} className="text-violet text-decoration-none">
                                                     Home
                                                 </a>{" "}
                                                 / <a href="/placements" className="text-decoration-none t-color">Placements</a>

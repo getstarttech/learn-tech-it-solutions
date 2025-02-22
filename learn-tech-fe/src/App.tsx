@@ -14,11 +14,11 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Router basename="/learn-tech-it-solutions">
+      <Router basename="/learn-tech-it-solutions/">
       <Header />
       <FloatingIcons></FloatingIcons>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/placements" element={<Placements />} />
         <Route path="/courses" element={<Courses />} />

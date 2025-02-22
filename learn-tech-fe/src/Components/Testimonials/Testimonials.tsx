@@ -107,11 +107,11 @@ const Testimonials = () => {
                 <div className="d-flex flex-column flex-md-row w-100">
 
 
-                  <div className="col-12 col-md-6 d-flex flex-column p-5 text-container">
-                    <div className="text-start mt-2 mt-5">
+                  <div className="col-12 col-md-6 d-flex flex-column ps-5 text-container">
+                    <div className="text-start">
                       <h2 className="main-color custom-title">Testimonials</h2>
                       <p className="custom-paragraph">
-                        <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
+                        <a onClick={()=>handleNavClick("")} className="text-violet text-decoration-none">
                           Home
                         </a>{" "}
                         / <a href="/testimonials" className="text-decoration-none t-color">Testimonials</a>

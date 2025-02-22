@@ -72,7 +72,7 @@ html {
 .text-container p {
   margin: 5px 0 0 0;
   color: #061b3f;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .navbar {
@@ -697,7 +697,7 @@ body {
   }
 
   .text-container p {
-    font-size: 20px !important;
+    font-size: 22px !important;
     margin: 0 !important;
   }
 
@@ -1056,7 +1056,7 @@ body {
 
 .logo-text {
   font-size: 20px;
-  font-weight: bold;
+  font-weight:normal;
   white-space: nowrap;
   margin-top: -15px;
 }
