@@ -2,7 +2,7 @@
   "name": "learn-tech-fe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://getstarttech.github.io/learn-tech-it-solutions",
+  "homepage": "https://getstarttech.github.io/learn-tech-it-solution",
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",

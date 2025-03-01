@@ -72,7 +72,7 @@ export const About = () => {
             {/* Right Column */}
             <div className="col-12 col-md-6 t-color">
               {/* <img src="/image/l_t-nobg.png"  className="d-block  " alt="logo" style={{ height: "100px"  }} /> */}
-              <h1 className="mb-3 t-color heading-64 home-text-center" data-aos="fade-left">Learn Tech IT Solutions</h1>
+              <h1 className="mb-3 t-color heading-64 home-text-center" data-aos="fade-left">Learn Tech IT Solution</h1>
               <p className="t-color para-17" data-aos="fade-right" style={{ marginLeft: "35px", marginTop: "-15px" }}><i>Shape Your Career</i></p>
               <div
                 className="p-3 border bg-light learn-tech-card card course-card bg-white p-color para-17"
@@ -97,7 +97,7 @@ export const About = () => {
                 <p>
                   Our mission is to empower individuals with the tools and
                   expertise needed to solve real-world problems through
-                  innovative software solutions.
+                  innovative software solution.
                 </p>
               </div>
             </div>

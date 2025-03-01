@@ -315,7 +315,7 @@ export const Footer: React.FC = () => {
                 <div className="logo-container1 mx-auto text-start " onClick={() => navigate('/')}>
                   <img src={`${process.env.PUBLIC_URL}/image/l_t-nobg.png`} alt="logo" />
                   <div className="logo-text-wrapper">
-                    <span className="logo-text1">Learn Tech IT Solutions</span>
+                    <span className="logo-text1">Learn Tech IT Solution</span>
                     <span className="logo-text1-down">Shape Your Career</span>
                   </div>
                 </div>

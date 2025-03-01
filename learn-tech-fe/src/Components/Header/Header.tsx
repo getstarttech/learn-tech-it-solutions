@@ -22,7 +22,7 @@ const Header = () => {
         <div className="logo-container" onClick={() => navigate('/')}>
           <img src={`${process.env.PUBLIC_URL}/image/l_t-nobg.png`} alt="logo" />
           <div className="logo-text-wrapper">
-            <span className="logo-text">Learn Tech IT Solutions</span>
+            <span className="logo-text">Learn Tech IT Solution</span>
             <span className="logo-text-down">Shape Your Career</span>
           </div>
         </div>
