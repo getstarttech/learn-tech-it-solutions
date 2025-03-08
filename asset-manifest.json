@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/learn-tech-it-solution/static/css/main.c90c17c5.css",
-    "main.js": "/learn-tech-it-solution/static/js/main.d9564256.js",
-    "static/js/453.949bddd1.chunk.js": "/learn-tech-it-solution/static/js/453.949bddd1.chunk.js",
-    "index.html": "/learn-tech-it-solution/index.html",
-    "main.c90c17c5.css.map": "/learn-tech-it-solution/static/css/main.c90c17c5.css.map",
-    "main.d9564256.js.map": "/learn-tech-it-solution/static/js/main.d9564256.js.map",
-    "453.949bddd1.chunk.js.map": "/learn-tech-it-solution/static/js/453.949bddd1.chunk.js.map"
+    "main.css": "/learn-tech-it-solutions/static/css/main.c90c17c5.css",
+    "main.js": "/learn-tech-it-solutions/static/js/main.71c88e5f.js",
+    "static/js/453.949bddd1.chunk.js": "/learn-tech-it-solutions/static/js/453.949bddd1.chunk.js",
+    "index.html": "/learn-tech-it-solutions/index.html",
+    "main.c90c17c5.css.map": "/learn-tech-it-solutions/static/css/main.c90c17c5.css.map",
+    "main.71c88e5f.js.map": "/learn-tech-it-solutions/static/js/main.71c88e5f.js.map",
+    "453.949bddd1.chunk.js.map": "/learn-tech-it-solutions/static/js/453.949bddd1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c90c17c5.css",
-    "static/js/main.d9564256.js"
+    "static/js/main.71c88e5f.js"
   ]
 }
