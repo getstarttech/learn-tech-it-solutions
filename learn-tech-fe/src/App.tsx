@@ -13,7 +13,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 function App() {
   return (
     <>
-      <Router basename="/learn-tech-it-solution/">
+      <Router basename="/learn-tech-it-solutions/">
       <Header />
       <FloatingIcons></FloatingIcons>
       <Routes>
