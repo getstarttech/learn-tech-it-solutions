@@ -7,7 +7,6 @@ import { Placements } from './Components/Placements/Placements';
 import { About } from './Components/AboutUs/About-us';
 import { Home } from './Components/Home/Home';
 import FloatingIcons from './Components/Pop-up/FloatIcons';
-import SocialIcons from './Components/Pop-up/SocialIcons';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
@@ -18,7 +17,7 @@ function App() {
       <Header />
       <FloatingIcons></FloatingIcons>
       <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/placements" element={<Placements />} />
         <Route path="/courses" element={<Courses />} />
