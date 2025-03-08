@@ -14,7 +14,8 @@ function App() {
   return (
     <>
       {/* <Router basename="/learn-tech-it-solutions/"> */}
-      <Router basename="/learn-tech-it-solutions/">
+      <Router>
+
       <Header />
       <FloatingIcons></FloatingIcons>
       <Routes>
