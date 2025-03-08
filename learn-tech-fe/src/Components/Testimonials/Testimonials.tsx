@@ -111,7 +111,7 @@ const Testimonials = () => {
                     <div className="text-start">
                       <h2 className="main-color custom-title">Testimonials</h2>
                       <p className="custom-paragraph">
-                        <a onClick={()=>handleNavClick("")} className="text-violet text-decoration-none">
+                        <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
                           Home
                         </a>{" "}
                         / <a href="/testimonials" className="text-decoration-none t-color">Testimonials</a>

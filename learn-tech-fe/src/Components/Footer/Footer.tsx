@@ -127,7 +127,7 @@ export const Footer: React.FC = () => {
                     <div className="text-start">
                       <h2 className="main-color custom-title">Contact Us</h2>
                       <p className="custom-paragraph">
-                        <a onClick={() => handleNavClick("")} className="text-violet text-decoration-none">
+                        <a onClick={() => handleNavClick("/")} className="text-violet text-decoration-none">
                           Home
                         </a>{" "}
                         / <a href="/contact-us" className="text-decoration-none t-color">Contact Us</a>
@@ -351,7 +351,7 @@ export const Footer: React.FC = () => {
               <h5 className="mb-3">Quick Links</h5>
               <div className="d-flex flex-column gap-2 ">
                 {[
-                  { label: "Home", link: "" },
+                  { label: "Home", link: "/" },
                   { label: "About Us", link: "/about-us" },
                   { label: "Placements", link: "/placements" },
                   { label: "Courses", link: "/courses" },

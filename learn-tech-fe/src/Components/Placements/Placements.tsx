@@ -47,7 +47,7 @@ export const Placements = () => {
                                         <div className="text-start">
                                             <h2 className="main-color custom-title">Placements</h2>
                                             <p className="custom-paragraph">
-                                                <a onClick={()=>handleNavClick("")} className="text-violet text-decoration-none">
+                                                <a onClick={()=>handleNavClick("/")} className="text-violet text-decoration-none">
                                                     Home
                                                 </a>{" "}
                                                 / <a href="/placements" className="text-decoration-none t-color">Placements</a>
